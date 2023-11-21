@@ -1,7 +1,23 @@
 public class Serie4FibonacciPar {
-// Método para generar una serie de fracciones usando un bucle for
+/*
+ *@author José David Pallares Santamaría
+ *
+ *@version 2.0
+ *
+ *@since 2023-11-21
+ *
+ *@license
+ *
+ *Serie  S4: 0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ....
+*/
+
+    /**
+     *Incremento Serie Fibonachi calcula la serie usando el ciclo for:  0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ....
+     *
+     *@param nPosiciones
+    */
     public void SerieFraccionariaFor(int nPosiciones) {
-// Inicializar variables para los dos primeros numeradores, el denominador y el tamaño del salto
+
         int numerador1 = 0;
         int numerador2 = 1;
         int denominador1 = 2;
@@ -19,14 +35,17 @@ public class Serie4FibonacciPar {
 
         }
     }
-    // Método para generar una serie de fracciones usando un bucle do-while
+    /**
+     *Incremento Serie Fibonachi calcula la serie usando el ciclo Dor:  0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ....
+     *
+     *@param nPosiciones
+    */
     public void SerieFraccionariaDo(int nPosiciones) {
         int numerador1 = 0;
         int numerador2 = 1;
         int denominador1 = 2;
         int salto = 2;
         int i = 0;
-        // Utilizar un bucle do-while para generar la serie de fracciones
         do {
             System.out.print(numerador1 + "/");
             System.out.print(denominador1 + " ");
@@ -38,14 +57,17 @@ public class Serie4FibonacciPar {
             i++;
         } while (i < nPosiciones); // Continuar hasta alcanzar 'nPosiciones' iteraciones
     }
-    // Método para generar una serie de fracciones usando un bucle while
+    /**
+     *Incremento Serie Fibonachi calcula la serie usando el ciclo While:  0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ....
+     *
+     *@param nPosiciones
+    */
     public void SerieFraccionariaWhile(int nPosiciones) {
         int numerador1 = 0;
         int numerador2 = 1;
         int denominador1 = 2;
         int salto = 2;
         int i = 0;
-        // Utilizar un bucle while para generar la serie de fracciones
         while (i < nPosiciones) {
             System.out.print(numerador1 + "/");
             System.out.print(denominador1 + " ");
