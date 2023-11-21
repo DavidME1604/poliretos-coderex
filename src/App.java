@@ -80,7 +80,6 @@ public class App {
         oIncrementoTres.IncrementoTresWhile(nPosiciones);
         System.out.println();
         
-
         Serie12MultiplicacionPorTres serie10 = new Serie12MultiplicacionPorTres();
         System.out.print("\nSerie 3 elevado a n potencias con for: ");
         serie10.MultiplicacionPor3For(nPosiciones);
