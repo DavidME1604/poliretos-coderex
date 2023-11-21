@@ -2,7 +2,6 @@ public class Serie6CuadradosSucesivos {
     /*
      * @author Johann Vladimir Pasquel Montenegro
      * @Github Vladimirjon
-     * 
      * version 2.0  
      *
      * @since 2023-11-21
@@ -20,7 +19,7 @@ public class Serie6CuadradosSucesivos {
      *
      */
 
-    /* numcuadrado_For calcula la serie utilizando el bucle for para obtener: 
+    /** numcuadrado_For calcula la serie utilizando el bucle for para obtener: 
      * 1 4 9 16 25 36 49 64 ...
      * 
      * @param nPosiciones 
@@ -31,7 +30,7 @@ public class Serie6CuadradosSucesivos {
         }
     }
 
-    /* numcuadrado_DoWhile calcula la serie utilizando Do-While para obtener: 
+    /** numcuadrado_DoWhile calcula la serie utilizando Do-While para obtener: 
      * 1 4 9 16 25 36 49 64 ...
      * 
      * @param nPosiciones 
@@ -43,7 +42,7 @@ public class Serie6CuadradosSucesivos {
         } while (++num <= nPosiciones);
     }
 
-    /* numcuadrado_While calcula la serie utilizando While para obtener: 
+    /** numcuadrado_While calcula la serie utilizando While para obtener: 
      * 1 4 9 16 25 36 49 64 ...
      * 
      * @param nPosiciones 
