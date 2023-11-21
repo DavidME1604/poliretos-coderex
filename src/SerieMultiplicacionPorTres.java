@@ -1,3 +1,7 @@
+/* Copyright (C) 2K23, grupo3
+ *jose.pallares@epn.edu.ec
+ *version1.0
+ */
 public class SerieMultiplicacionPorTres {
     public void MultiplicacionPor3For(int nPosiciones) {
         int primerTermino = 3;
