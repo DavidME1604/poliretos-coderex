@@ -1,5 +1,21 @@
 public class Serie10MultiplicacionPorTres {
-    
+/*
+ *@author José David Pallares Santamaría
+ *
+ *@version 2.0
+ *
+ *@since 2023-11-21
+ *
+ *@license
+ *
+ *Serie  S10:  3  9  27  81  243  729  2187 ....
+*/
+
+    /**
+     *MultiplicacionPorTres calcula usando For: 3  9  27  81  243  729  2187.... 
+     *
+     *@param nPosiciones
+     */
     public void MultiplicacionPor3For(int nPosiciones) {
         int primerTermino = 3;
         for (int i = 1; i <= nPosiciones; i++) {
@@ -8,7 +24,11 @@ public class Serie10MultiplicacionPorTres {
         }
     }
 
-    
+    /**
+     *MultiplicacionPorTres calcula usando Do: 3  9  27  81  243  729  2187.... 
+     *
+     *@param nPosiciones
+     */
     public void MultiplicacionPor3Do(int nPosiciones) {
         int primerTermino = 3;
         int i = 0;
