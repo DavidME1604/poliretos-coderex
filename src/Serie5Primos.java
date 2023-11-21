@@ -1,8 +1,14 @@
 /**
- * Crear la siguinete serie: S5:  2	 3	 5 	 7	 11	 13	 17	 19	 23	 29	 31	...
+ * Clase que representa la generación de la serie cinco.
+ * 
+ *  * <p>
+ * La serie S5 sigue un patrón de aumento en los números primos. Por lo tanto, 
+ * la serie se forma como sigue: 3, 8, 13, 18, 23, 28, 33, 38, ..
+ * </p>
+ * 
  * @author: Elizabeth Lorena Lopez Zelaya
  * @version: 1.0
- * @since: 19 noviembre, 2023
+ * @since: 19 noviembre de 2023
  */
 
 public class Serie5Primos {

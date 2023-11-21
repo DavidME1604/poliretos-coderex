@@ -107,5 +107,14 @@ public class App {
         System.out.print("\n[While] -S5 Numeros Primos:         ");
         oSerie5Primos.imprimirPrimosWhile(nPosiciones);
         System.out.println();
+
+        Serie8Incremento5 oSerie8Incremento5 = new Serie8Incremento5();
+        System.out.print("\n[For] -S8 Incremento en cinco:      ");
+        oSerie8Incremento5.imprimirIncrementoEnCincoFor(nPosiciones);
+        System.out.print("\n[Do-While] -S8 Incremento en cinco: ");
+        oSerie8Incremento5.imprimirIncrementoEnCincoDoWhile(nPosiciones);
+        System.out.print("\n[While] -S8 Incremento en cinco:    ");
+        oSerie8Incremento5.imprimirIncrementoEnCincoWhile(nPosiciones);
+        System.out.println();
     }
 }
