@@ -1,4 +1,4 @@
-/* Copuright (C) 2K23, grupo3
+/* Copyright (C) 2K23, grupo3
  *jose.pallares@epn.edu.ec
  *version1.0
  */
