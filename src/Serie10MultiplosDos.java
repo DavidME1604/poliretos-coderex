@@ -1,4 +1,4 @@
-public class SerieMultiplosDos {
+public class Serie10MultiplosDos {
     public void MultiplosDosFor(int nPosiciones) {
         for (int i = 1, nAnt = 0; i <= nPosiciones; nAnt += i * 2, i++) {
             System.out.print(i * 2 + nAnt + " ");
