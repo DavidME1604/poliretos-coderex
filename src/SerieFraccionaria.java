@@ -1,3 +1,7 @@
+/* Copuright (C) 2K23, grupo3
+ *jose.pallares@epn.edu.ec
+ *version1.0
+ */
 public class SerieFraccionaria {
     public void SerieFraccionariaFor(int nPosiciones){
         int numerador1 = 0;
