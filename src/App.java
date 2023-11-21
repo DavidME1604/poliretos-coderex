@@ -80,7 +80,7 @@ public class App {
         oIncrementoTres.IncrementoTresWhile(nPosiciones);
         System.out.println();
         
-        Serie12MultiplicacionPorTres serie10 = new Serie12MultiplicacionPorTres();
+        Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
         System.out.print("\nSerie 3 elevado a n potencias con for: ");
         serie10.MultiplicacionPor3For(nPosiciones);
         System.out.print("\nSerie 3 elevado a n potencias con do-while: ");
@@ -89,7 +89,7 @@ public class App {
         serie10.MultiplicacionPor3While(nPosiciones);
         System.out.println();
 
-        Serie10MultiplosDos oMultiplosDos = new Serie10MultiplosDos();
+        Serie12MultiplosDos oMultiplosDos = new Serie12MultiplosDos();
         System.out.print("\nSerie 2 - 6... for: ");
         oMultiplosDos.MultiplosDosFor(nPosiciones);
         System.out.print("\nSerie 2 - 6... do: ");

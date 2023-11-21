@@ -23,7 +23,7 @@ public class Serie7IncrementoTres {
     }
 
     /**
-     * IncremenoTresFor calcula la serie usando el ciclo Do-While : 1 0 3 0 5 0 7 0
+     * IncremenoTresDoWHile calcula la serie usando el ciclo Do-While : 1 0 3 0 5 0 7 0
      * 9 ...
      * 
      * @param nPosiciones
@@ -38,7 +38,7 @@ public class Serie7IncrementoTres {
     }
 
     /**
-     * IncremenoTresFor calcula la serie usando el ciclo While : 1 0 3 0 5 0 7 0 9
+     * IncremenoTresWhile calcula la serie usando el ciclo While : 1 0 3 0 5 0 7 0 9
      * ...
      * 
      * @param nPosiciones

@@ -24,7 +24,7 @@ public class Serie2ImparCero {
     }
 
     /**
-     * IncremenoTresFor calcula la serie usando el ciclo Do-While : 1 4 7 10 13 16
+     * IncremenoTresDoWHile calcula la serie usando el ciclo Do-While : 1 4 7 10 13 16
      * 19 22 25 ...
      * 
      * @param nPosiciones
@@ -37,7 +37,7 @@ public class Serie2ImparCero {
     }
 
     /**
-     * IncremenoTresFor calcula la serie usando el ciclo While : 1 4 7 10 13 16 19
+     * IncremenoTresWhile calcula la serie usando el ciclo While : 1 4 7 10 13 16 19
      * 22 25 ...
      * 
      * @param nPosiciones
