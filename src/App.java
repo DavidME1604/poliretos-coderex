@@ -32,7 +32,8 @@ public class App {
         System.out.println();
         System.out.println(
                 "        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
-        System.out.println("Ingrese el numero de elementos");
+        
+        System.out.print("Ingresa la cantidad de términos que tendrá de la serie: ");
         int nPosiciones = reader.nextInt();
 
         Serie2ImparCero oCeroImpar = new Serie2ImparCero();
@@ -96,6 +97,15 @@ public class App {
         oMultiplosDos.MultiplosDosDo(nPosiciones);
         System.out.print("\nSerie 2 - 6... while: ");
         oMultiplosDos.MultiplosDosWhile(nPosiciones);
+        System.out.println();
+
+        Serie5Primos oSerie5Primos = new Serie5Primos();
+        System.out.print("\n[For] S5 Numeros Primos:            ");
+        oSerie5Primos.imprimirPrimosFor(nPosiciones);
+        System.out.print("\n[Do-While] -S5 Numeros Primos:      ");
+        oSerie5Primos.imprimirPrimosDoWhile(nPosiciones);
+        System.out.print("\n[While] -S5 Numeros Primos:         ");
+        oSerie5Primos.imprimirPrimosWhile(nPosiciones);
         System.out.println();
     }
 }
