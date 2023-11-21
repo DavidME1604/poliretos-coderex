@@ -13,7 +13,7 @@ public class App {
         System.out.println("                      ********                   *");
         System.out.println("                 **************                  **");
         System.out.println("                ***¯¯¯***********              ****");
-        System.out.println("                      ************           *****");
+        System.out.println("                      ****************************");
         System.out.println("                      ***************************");
         System.out.println("                       ****** /###   ###  ******");
         System.out.println("                        ***** #      #  # ****");
@@ -31,7 +31,6 @@ public class App {
         System.out.println("                          #  #  ####  #    #");
         System.out.println();
         System.out.println("        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
-        
         System.out.println("Ingrese el numero de elementos");
         int nPosiciones = reader.nextInt();
         SerieCeroImpar oCeroImpar = new SerieCeroImpar();
