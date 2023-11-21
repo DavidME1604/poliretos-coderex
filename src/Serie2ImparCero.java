@@ -1,7 +1,7 @@
 public class Serie2ImparCero {
     /*
      * @author David Esteban Morales Estrella
-     * 
+     * @Github DavidME1604
      * @version 2.0
      * 
      * @since 2023-11-21
