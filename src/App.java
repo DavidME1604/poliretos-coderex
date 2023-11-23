@@ -32,7 +32,7 @@ public class App {
         System.out.println();
         System.out.println(
                 "        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
-        System.out.println("Ingrese el numero de elementos");
+        System.out.print("Ingrese el numero de elementos: ");
         int nPosiciones = reader.nextInt();
 
         Serie2ImparCero oCeroImpar = new Serie2ImparCero();
@@ -62,6 +62,15 @@ public class App {
         serie4.SerieFraccionariaWhile(nPosiciones);
         System.out.println();
 
+        Serie5NumerosImpares serie5 = new Serie5NumerosImpares();
+        System.out.print("\nSerie primos con for: ");
+        serie5.NumerosPrimosFor(nPosiciones);
+        System.out.print("\nSerie primos con do: ");
+        serie5.NumerosPrimosDo(nPosiciones);
+        System.out.print("\nSerie primos con do: ");
+        serie5.NumerosPrimosWhile(nPosiciones);
+        System.out.println();
+
         Serie6CuadradosSucesivos serie6 = new Serie6CuadradosSucesivos();
         System.out.print("\nSerie de cuadrados con for: ");
         serie6.numcuadrado_For(nPosiciones);
@@ -79,7 +88,16 @@ public class App {
         System.out.print("\nSerie 1 - 4... while: ");
         oIncrementoTres.IncrementoTresWhile(nPosiciones);
         System.out.println();
-        
+
+        Serie8SumaCinco serie8 = new Serie8SumaCinco();
+        System.out.print("\nSerie primos con for: ");
+        serie8.SumaCincoFor(nPosiciones);
+        System.out.print("\nSerie primos con do: ");
+        serie8.SumaCincoDo(nPosiciones);
+        System.out.print("\nSerie primos con while: ");
+        serie8.SumaCincoWhile(nPosiciones);
+        System.out.println();
+
         Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
         System.out.print("\nSerie 3 elevado a n potencias con for: ");
         serie10.MultiplicacionPor3For(nPosiciones);
