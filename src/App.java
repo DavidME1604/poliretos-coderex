@@ -35,6 +35,18 @@ public class App {
         System.out.print("Ingrese el numero de elementos: ");
         int nPosiciones = reader.nextInt();
 
+    
+            SerieFibonacci fibonacci = new SerieFibonacci();
+    
+            System.out.println("Imprimiendo serie Fibonacci con bucle for:");
+            fibonacci.imprimirFibonacciFor(10);
+    
+            System.out.println("\nImprimiendo serie Fibonacci con bucle do-while:");
+            fibonacci.imprimirFibonacciDoWhile(10);
+    
+            System.out.println("\nImprimiendo serie Fibonacci con bucle while:");
+            fibonacci.imprimirFibonacciWhile(10);
+
         Serie2ImparCero oCeroImpar = new Serie2ImparCero();
         System.out.print("\nSerie 1 - 0... for: ");
         oCeroImpar.ImparesCeroFor(nPosiciones);
