@@ -101,15 +101,24 @@ public class App {
             oIncrementoTres.IncrementoTresWhile(nPosiciones);
             System.out.println();
 
-        Serie8SumaCinco serie8 = new Serie8SumaCinco();
-        System.out.print("\nSerie primos con for: ");
-        serie8.SumaCincoFor(nPosiciones);
-        System.out.print("\nSerie primos con do: ");
-        serie8.SumaCincoDo(nPosiciones);
-        System.out.print("\nSerie primos con while: ");
-        serie8.SumaCincoWhile(nPosiciones);
-        System.out.println();
+            Serie8SumaCinco serie8 = new Serie8SumaCinco();
+            System.out.print("\nSerie primos con for: ");
+            serie8.SumaCincoFor(nPosiciones);
+            System.out.print("\nSerie primos con do: ");
+            serie8.SumaCincoDo(nPosiciones);
+            System.out.print("\nSerie primos con while: ");
+            serie8.SumaCincoWhile(nPosiciones);
+            System.out.println();
 
+            Serie9 serie = new Serie9();
+            System.out.println("Usando bucle for:");
+            serie.imprimirMultiplicacionPorDosFor(nPosiciones);
+            System.out.println("\nUsando bucle do-while:");
+            serie.imprimirMultiplicacionPorDosDoWhile(nPosiciones);
+            System.out.println("\nUsando bucle while:");
+            serie.imprimirMultiplicacionPorDosWhile(nPosiciones);
+            System.out.println();
+            
             Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
             System.out.print("\nSerie 3 elevado a n potencias con for: ");
             serie10.MultiplicacionPor3For(nPosiciones);
