@@ -98,6 +98,15 @@ public class App {
         serie8.SumaCincoWhile(nPosiciones);
         System.out.println();
 
+        Serie9 serie = new Serie9();
+        System.out.println("Usando bucle for:");
+        serie.imprimirMultiplicacionPorDosFor(nPosiciones);
+        System.out.println("\nUsando bucle do-while:");
+        serie.imprimirMultiplicacionPorDosDoWhile(nPosiciones);
+        System.out.println("\nUsando bucle while:");
+        serie.imprimirMultiplicacionPorDosWhile(nPosiciones);
+        System.out.println();
+
         Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
         System.out.print("\nSerie 3 elevado a n potencias con for: ");
         serie10.MultiplicacionPor3For(nPosiciones);
