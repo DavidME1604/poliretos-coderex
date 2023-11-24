@@ -7,7 +7,7 @@
  * </p>
  * 
  * @author Jonathan Paredes
- * @version 1.0
+ * @version 2.43
  * @since 23 de noviembre de 2023
  */
 public class SerieFibonacci {
