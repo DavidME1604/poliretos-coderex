@@ -101,14 +101,14 @@ public class App {
             oIncrementoTres.IncrementoTresWhile(nPosiciones);
             System.out.println();
 
-            Serie8SumaCinco serie8 = new Serie8SumaCinco();
-            System.out.print("\nSerie primos con for: ");
-            serie8.SumaCincoFor(nPosiciones);
-            System.out.print("\nSerie primos con do: ");
-            serie8.SumaCincoDo(nPosiciones);
-            System.out.print("\nSerie primos con while: ");
-            serie8.SumaCincoWhile(nPosiciones);
-            System.out.println();
+        Serie8SumaCinco serie8 = new Serie8SumaCinco();
+        System.out.print("\nSerie primos con for: ");
+        serie8.SumaCincoFor(nPosiciones);
+        System.out.print("\nSerie primos con do: ");
+        serie8.SumaCincoDo(nPosiciones);
+        System.out.print("\nSerie primos con while: ");
+        serie8.SumaCincoWhile(nPosiciones);
+        System.out.println();
 
             Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
             System.out.print("\nSerie 3 elevado a n potencias con for: ");
