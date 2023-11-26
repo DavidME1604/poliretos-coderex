@@ -11,15 +11,15 @@
  * @version 2.43
  * @since 23 de noviembre de 2023
  */
-public class Serie9 {
+public class Serie9DobleAnterior {
 
     /**
      * Imprime los términos de la serie utilizando un bucle for y un incremento constante de 2.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirMultiplicacionPorDosFor(int nPosiciones) {
-        for (int contador = 0, valor = 2; contador < nPosiciones; valor *= 2, contador++) {
+    public void imprimirMultiplicacionPorDosFor(int numeroElementos) {
+        for (int contador = 0, valor = 2; contador < numeroElementos; valor *= 2, contador++) {
             System.out.print(valor + " ");
         }
     }
@@ -27,24 +27,24 @@ public class Serie9 {
     /**
      * Imprime los términos de la serie utilizando un bucle do-while y un incremento constante de 2.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirMultiplicacionPorDosDoWhile(int nPosiciones) {
+    public void imprimirMultiplicacionPorDosDoWhile(int numeroElementos) {
         int contador = 0, valor = 2;
         do {
             System.out.print(valor + " ");
             valor *= 2;
-        } while (++contador < nPosiciones);
+        } while (++contador < numeroElementos);
     }
 
     /**
      * Imprime los términos de la serie utilizando un bucle while y un incremento constante de 2.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirMultiplicacionPorDosWhile(int nPosiciones) {
+    public void imprimirMultiplicacionPorDosWhile(int numeroElementos) {
         int contador = 0, valor = 2;
-        while (contador++ < nPosiciones) {
+        while (contador++ < numeroElementos) {
             System.out.print(valor + " ");
             valor *= 2;
         }

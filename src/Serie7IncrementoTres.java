@@ -1,5 +1,5 @@
 public class Serie7IncrementoTres {
-    /*
+    /**
      * @author David Esteban Morales Estrella
      * @Github DavidME1604
      * @version 2.0
@@ -8,44 +8,42 @@ public class Serie7IncrementoTres {
      * 
      * @license
      * 
-     * Serie S2: 1 0 3 0 5 0 7 0 9 ...
+     * Serie S7: 1  4  7  10  13  16  19  22  25  ...
      */
 
     /**
-     * IncremenoTresFor calcula la serie usando el ciclo For : 1 0 3 0 5 0 7 0 9 ...
+     * IncremenoTresFor calcula la serie usando el ciclo For : 1  4  7  10  13  16  19  22  25  ...
      * 
-     * @param nPosiciones
+     * @param numeroElementos
      */
-    public void IncrementoTresFor(int nPosiciones) {
-        for (int i = 0, numero = 1; i < nPosiciones; numero += 3, i++) {
+    public void IncrementoTresFor(int numeroElementos) {
+        for (int i = 0, numero = 1; i < numeroElementos; numero += 3, i++) {
             System.out.print(numero + " ");
         }
     }
 
     /**
-     * IncremenoTresDoWHile calcula la serie usando el ciclo Do-While : 1 0 3 0 5 0 7 0
-     * 9 ...
+     * IncremenoTresDo calcula la serie usando el ciclo Do-While : 1  4  7  10  13  16  19  22  25  ...
      * 
-     * @param nPosiciones
+     * @param numeroElementos
      */
-    public void IncrementoTresDo(int nPosiciones) {
+    public void IncrementoTresDo(int numeroElementos) {
         int cont = 0, numero = 1;
         do {
             System.out.print(numero + " ");
             numero += 3;
             ;
-        } while (++cont < nPosiciones);
+        } while (++cont < numeroElementos);
     }
 
     /**
-     * IncremenoTresWhile calcula la serie usando el ciclo While : 1 0 3 0 5 0 7 0 9
-     * ...
+     * IncremenoTresWhile calcula la serie usando el ciclo While : 1  4  7  10  13  16  19  22  25  ...
      * 
-     * @param nPosiciones
+     * @param numeroElementos
      */
-    public void IncrementoTresWhile(int nPosiciones) {
+    public void IncrementoTresWhile(int numeroElementos) {
         int cont = 0, numero = 1;
-        while (cont++ < nPosiciones) {
+        while (cont++ < numeroElementos) {
             System.out.print(numero + " ");
             numero += 3;
         }

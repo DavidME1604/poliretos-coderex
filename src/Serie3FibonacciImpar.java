@@ -21,13 +21,13 @@ public class Serie3FibonacciImpar {
     /** fraccion_For calcula la serie utilizando el bucle for para obtener: 
      * 0/1 1/3 1/5 2/7 3/9 5/11 8/13 13/15 ...
      * 
-     * @param nPosiciones 
+     * @param numeroElementos 
      */
-    public void fraccion_For(int nPosiciones) {
+    public void fraccion_For(int numeroElementos) {
         int numeradorantes = 0;
         int numeradornow = 1;
         int denominador = 1;
-        for (int i = 0; i < nPosiciones; i++) {
+        for (int i = 0; i < numeroElementos; i++) {
             System.out.print(numeradorantes + "/" + denominador + " ");
             int newnumerador = numeradorantes + numeradornow;
             numeradorantes = numeradornow;
@@ -39,9 +39,9 @@ public class Serie3FibonacciImpar {
     /** fraccion_DoWhile calcula la serie utilizando el Do While para obtener: 
      * 0/1 1/3 1/5 2/7 3/9 5/11 8/13 13/15 ...
      * 
-     * @param nPosiciones 
+     * @param numeroElementos 
      */
-    public void fraccion_DoWhile(int nPosiciones) {
+    public void fraccion_DoWhile(int numeroElementos) {
         int numeradorAntes = 0;
         int numeradornow = 1;
         int denominador = 1;
@@ -53,21 +53,21 @@ public class Serie3FibonacciImpar {
             numeradorAntes = numeradornow;
             numeradornow = newnumerador;
             denominador += 2;
-        } while (++num < nPosiciones);
+        } while (++num < numeroElementos);
     }
 
      /** fraccion_While calcula la serie utilizando el While para obtener: 
      * 0/1 1/3 1/5 2/7 3/9 5/11 8/13 13/15 ...
      * 
-     * @param nPosiciones 
+     * @param numeroElementos 
      */
-    public void fraccion_While(int nPosiciones) {
+    public void fraccion_While(int numeroElementos) {
         int numeradorAntes = 0;
         int numeradornow = 1;
         int denominador = 1;
         int num = 0;
 
-        while (++num <= nPosiciones) {
+        while (++num <= numeroElementos) {
             System.out.print(numeradorAntes + "/" + denominador + " ");
             int newnumerador = numeradorAntes + numeradornow;
             numeradorAntes = numeradornow;

@@ -14,11 +14,11 @@ public class Serie10MultiplicacionPorTres {
     /**
      *MultiplicacionPorTres calcula usando For: 3  9  27  81  243  729  2187.... 
      *
-     *@param nPosiciones
+     *@param numeroElementos
      */
-    public void MultiplicacionPor3For(int nPosiciones) {
+    public void MultiplicacionPor3For(int numeroElementos) {
         int primerTermino = 3;
-        for (int i = 1; i <= nPosiciones; i++) {
+        for (int i = 1; i <= numeroElementos; i++) {
             System.out.print(primerTermino + " ");
             primerTermino *= 3;
         }
@@ -27,26 +27,26 @@ public class Serie10MultiplicacionPorTres {
     /**
      *MultiplicacionPorTres calcula usando Do: 3  9  27  81  243  729  2187.... 
      *
-     *@param nPosiciones
+     *@param numeroElementos
      */
-    public void MultiplicacionPor3Do(int nPosiciones) {
+    public void MultiplicacionPor3Do(int numeroElementos) {
         int primerTermino = 3;
         int i = 0;
         do {
             System.out.print(primerTermino + " ");
             primerTermino *= 3;
             i++;
-        } while (i < nPosiciones);
+        } while (i < numeroElementos);
     }
 
     /**
      * IncremenoTresFor calcula la serie usando el ciclo While : 2  6   12  20  30  42  56  72  ...
-     * @param nPosiciones
+     * @param numeroElementos
      */
-    public void MultiplicacionPor3While(int nPosiciones) {
+    public void MultiplicacionPor3While(int numeroElementos) {
         int primerTermino = 3;
         int i = 0;
-        while (i < nPosiciones) {
+        while (i < numeroElementos) {
             System.out.print(primerTermino + " ");
             primerTermino *= 3;
             i++;

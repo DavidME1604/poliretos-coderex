@@ -33,109 +33,106 @@ public class App {
             System.out.println(
                     "        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
             System.out.print("Ingrese el numero de elementos: ");
-            int nPosiciones = reader.nextInt();
+            int numeroElementos = reader.nextInt();
 
-   
-                SerieFibonacci fibonacci = new SerieFibonacci();
-   
-                System.out.println("Imprimiendo serie Fibonacci con bucle for:");
-                fibonacci.imprimirFibonacciFor(nPosiciones);
-   
-                System.out.println("\nImprimiendo serie Fibonacci con bucle do-while:");
-                fibonacci.imprimirFibonacciDoWhile(nPosiciones);
-   
-                System.out.println("\nImprimiendo serie Fibonacci con bucle while:");
-                fibonacci.imprimirFibonacciWhile(nPosiciones);
+            Serie1Fibonacci oSerie1 = new Serie1Fibonacci();
+            System.out.print("\nImprimiendo serie Fibonacci con bucle for: ");
+            oSerie1.imprimirFibonacciFor(numeroElementos);
+            System.out.print("\nImprimiendo serie Fibonacci con bucle do-while: ");
+            oSerie1.imprimirFibonacciDoWhile(numeroElementos);
+            System.out.print("\nImprimiendo serie Fibonacci con bucle while: ");
+            oSerie1.imprimirFibonacciWhile(numeroElementos);
+            System.out.println();
 
-            Serie2ImparCero oCeroImpar = new Serie2ImparCero();
+            Serie2ImparCero oSerie2 = new Serie2ImparCero();
             System.out.print("\nSerie 1 - 0... for: ");
-            oCeroImpar.ImparesCeroFor(nPosiciones);
+            oSerie2.ImparesCeroFor(numeroElementos);
             System.out.print("\nSerie 1 - 0... do: ");
-            oCeroImpar.ImparesCeroDo(nPosiciones);
+            oSerie2.ImparesCeroDo(numeroElementos);
             System.out.print("\nSerie 1 - 0... while: ");
-            oCeroImpar.ImparesCeroWhile(nPosiciones);
+            oSerie2.ImparesCeroWhile(numeroElementos);
             System.out.println();
 
-            Serie3FibonacciImpar serie3 = new Serie3FibonacciImpar();
+            Serie3FibonacciImpar oSerie3 = new Serie3FibonacciImpar();
             System.out.print("\nSerie de fracciones con for: ");
-            serie3.fraccion_For(nPosiciones);
+            oSerie3.fraccion_For(numeroElementos);
             System.out.print("\nSerie de fracciones con doWhile: ");
-            serie3.fraccion_DoWhile(nPosiciones);
+            oSerie3.fraccion_DoWhile(numeroElementos);
             System.out.print("\nSerie de fracciones con while: ");
-            serie3.fraccion_While(nPosiciones);
+            oSerie3.fraccion_While(numeroElementos);
             System.out.println();
 
-            Serie4FibonacciPar serie4 = new Serie4FibonacciPar();
+            Serie4FibonacciPar oSerie4 = new Serie4FibonacciPar();
             System.out.print("\nSerie de fibonacci dividido entre pares con for: ");
-            serie4.SerieFraccionariaFor(nPosiciones);
+            oSerie4.SerieFraccionariaFor(numeroElementos);
             System.out.print("\nSerie de fibonacci dividido entre pares con do-while: ");
-            serie4.SerieFraccionariaDo(nPosiciones);
+            oSerie4.SerieFraccionariaDo(numeroElementos);
             System.out.print("\nSerie de fibonacci dividido entre pares con while: ");
-            serie4.SerieFraccionariaWhile(nPosiciones);
+            oSerie4.SerieFraccionariaWhile(numeroElementos);
             System.out.println();
 
-            Serie5NumerosImpares serie5 = new Serie5NumerosImpares();
+            Serie5NumerosImpares oSerie5 = new Serie5NumerosImpares();
             System.out.print("\nSerie primos con for: ");
-            serie5.NumerosPrimosFor(nPosiciones);
+            oSerie5.NumerosPrimosFor(numeroElementos);
             System.out.print("\nSerie primos con do: ");
-            serie5.NumerosPrimosDo(nPosiciones);
+            oSerie5.NumerosPrimosDo(numeroElementos);
             System.out.print("\nSerie primos con do: ");
-            serie5.NumerosPrimosWhile(nPosiciones);
+            oSerie5.NumerosPrimosWhile(numeroElementos);
             System.out.println();
 
-            Serie6CuadradosSucesivos serie6 = new Serie6CuadradosSucesivos();
+            Serie6CuadradosSucesivos oSerie6 = new Serie6CuadradosSucesivos();
             System.out.print("\nSerie de cuadrados con for: ");
-            serie6.numcuadrado_For(nPosiciones);
+            oSerie6.numcuadrado_For(numeroElementos);
             System.out.print("\nSerie de cuadrados con do-while: ");
-            serie6.numcuadrado_DoWhile(nPosiciones);
+            oSerie6.numcuadrado_DoWhile(numeroElementos);
             System.out.print("\nSerie de cuadrados con while: ");
-            serie6.numcuadrado_While(nPosiciones);
+            oSerie6.numcuadrado_While(numeroElementos);
             System.out.println();
 
-            Serie7IncrementoTres oIncrementoTres = new Serie7IncrementoTres();
+            Serie7IncrementoTres oSerie7 = new Serie7IncrementoTres();
             System.out.print("\nSerie 1 - 4... for: ");
-            oIncrementoTres.IncrementoTresFor(nPosiciones);
+            oSerie7.IncrementoTresFor(numeroElementos);
             System.out.print("\nSerie 1 - 4... do: ");
-            oIncrementoTres.IncrementoTresDo(nPosiciones);
+            oSerie7.IncrementoTresDo(numeroElementos);
             System.out.print("\nSerie 1 - 4... while: ");
-            oIncrementoTres.IncrementoTresWhile(nPosiciones);
+            oSerie7.IncrementoTresWhile(numeroElementos);
             System.out.println();
 
-            Serie8SumaCinco serie8 = new Serie8SumaCinco();
+            Serie8SumaCinco oSerie8 = new Serie8SumaCinco();
             System.out.print("\nSerie primos con for: ");
-            serie8.SumaCincoFor(nPosiciones);
+            oSerie8.SumaCincoFor(numeroElementos);
             System.out.print("\nSerie primos con do: ");
-            serie8.SumaCincoDo(nPosiciones);
+            oSerie8.SumaCincoDo(numeroElementos);
             System.out.print("\nSerie primos con while: ");
-            serie8.SumaCincoWhile(nPosiciones);
+            oSerie8.SumaCincoWhile(numeroElementos);
             System.out.println();
 
-            Serie9 serie = new Serie9();
-            System.out.println("Usando bucle for:");
-            serie.imprimirMultiplicacionPorDosFor(nPosiciones);
-            System.out.println("\nUsando bucle do-while:");
-            serie.imprimirMultiplicacionPorDosDoWhile(nPosiciones);
-            System.out.println("\nUsando bucle while:");
-            serie.imprimirMultiplicacionPorDosWhile(nPosiciones);
+            Serie9DobleAnterior oSerie9 = new Serie9DobleAnterior();
+            System.out.print("\nUsando bucle for: ");
+            oSerie9.imprimirMultiplicacionPorDosFor(numeroElementos);
+            System.out.print("\nUsando bucle do-while: ");
+            oSerie9.imprimirMultiplicacionPorDosDoWhile(numeroElementos);
+            System.out.print("\nUsando bucle while: ");
+            oSerie9.imprimirMultiplicacionPorDosWhile(numeroElementos);
             System.out.println();
-            
-            Serie10MultiplicacionPorTres serie10 = new Serie10MultiplicacionPorTres();
+
+            Serie10MultiplicacionPorTres oSerie10 = new Serie10MultiplicacionPorTres();
             System.out.print("\nSerie 3 elevado a n potencias con for: ");
-            serie10.MultiplicacionPor3For(nPosiciones);
+            oSerie10.MultiplicacionPor3For(numeroElementos);
             System.out.print("\nSerie 3 elevado a n potencias con do-while: ");
-            serie10.MultiplicacionPor3Do(nPosiciones);
+            oSerie10.MultiplicacionPor3Do(numeroElementos);
             System.out.print("\nSerie 3 elevado a n potencias con while: ");
-            serie10.MultiplicacionPor3While(nPosiciones);
+            oSerie10.MultiplicacionPor3While(numeroElementos);
             System.out.println();
 
-            Serie12MultiplosDos oMultiplosDos = new Serie12MultiplosDos();
+            Serie12MultiplosDos oSerie12 = new Serie12MultiplosDos();
             System.out.print("\nSerie 2 - 6... for: ");
-            oMultiplosDos.MultiplosDosFor(nPosiciones);
+            oSerie12.MultiplosDosFor(numeroElementos);
             System.out.print("\nSerie 2 - 6... do: ");
-            oMultiplosDos.MultiplosDosDo(nPosiciones);
+            oSerie12.MultiplosDosDo(numeroElementos);
             System.out.print("\nSerie 2 - 6... while: ");
-            oMultiplosDos.MultiplosDosWhile(nPosiciones);
+            oSerie12.MultiplosDosWhile(numeroElementos);
+            System.out.println();
         }
-        System.out.println();
     }
 }
