@@ -98,7 +98,13 @@ public class App {
             oSerie7.IncrementoTresWhile(numeroElementos);
             System.out.println();
 
-         
+            Serie8SumaCinco oSerie8 = new Serie8SumaCinco();
+            System.out.print("\n[For] -S8 Incremento en cinco:      ");
+            oSerie8.imprimirIncrementoEnCincoFor(numeroElementos);
+            System.out.print("\n[Do-While] -S8 Incremento en cinco: ");
+            oSerie8.imprimirIncrementoEnCincoDoWhile(numeroElementos);
+            System.out.print("\n[While] -S8 Incremento en cinco:    ");
+            oSerie8.imprimirIncrementoEnCincoWhile(numeroElementos)
 
             Serie9DobleAnterior oSerie9 = new Serie9DobleAnterior();
             System.out.print("\nUsando bucle for: ");
