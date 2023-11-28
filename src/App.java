@@ -71,13 +71,13 @@ public class App {
             oSerie4.SerieFraccionariaWhile(numeroElementos);
             System.out.println();
 
-            Serie5NumerosImpares oSerie5 = new Serie5NumerosImpares();
-            System.out.print("\nSerie primos con for: ");
-            oSerie5.NumerosPrimosFor(numeroElementos);
-            System.out.print("\nSerie primos con do: ");
-            oSerie5.NumerosPrimosDo(numeroElementos);
-            System.out.print("\nSerie primos con do: ");
-            oSerie5.NumerosPrimosWhile(numeroElementos);
+            Serie5NumerosPrimos oSerie5 = new Serie5NumerosPrimos();
+            System.out.print("\n[For] S5 Numeros Primos:            ");
+            oSerie5.imprimirPrimosFor(numeroElementos);
+            System.out.print("\n[Do-While] -S5 Numeros Primos:      ");
+            oSerie5.imprimirPrimosDoWhile(numeroElementos);
+            System.out.print("\n[While] -S5 Numeros Primos:         ");
+            oSerie5.imprimirPrimosWhile(numeroElementos);
             System.out.println();
 
             Serie6CuadradosSucesivos oSerie6 = new Serie6CuadradosSucesivos();
@@ -98,14 +98,7 @@ public class App {
             oSerie7.IncrementoTresWhile(numeroElementos);
             System.out.println();
 
-            Serie8SumaCinco oSerie8 = new Serie8SumaCinco();
-            System.out.print("\nSerie primos con for: ");
-            oSerie8.SumaCincoFor(numeroElementos);
-            System.out.print("\nSerie primos con do: ");
-            oSerie8.SumaCincoDo(numeroElementos);
-            System.out.print("\nSerie primos con while: ");
-            oSerie8.SumaCincoWhile(numeroElementos);
-            System.out.println();
+         
 
             Serie9DobleAnterior oSerie9 = new Serie9DobleAnterior();
             System.out.print("\nUsando bucle for: ");
