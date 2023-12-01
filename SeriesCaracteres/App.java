@@ -8,23 +8,23 @@ public class App {
         System.out.print("Ingrese el numero de elementos: ");
         int numeroElementos = reader.nextInt();
 
-        Serie2MasFibonacci serieCaracter2 = new Serie2MasFibonacci();
+        Serie2MasFibonacci oSerie2 = new Serie2MasFibonacci();
         System.out.print("Serie 2 fibonacci con For (+): ");
-        serieCaracter2.SerieMasFibonacciFor(numeroElementos);
+        oSerie2.SerieMasFibonacciFor(numeroElementos);
         System.out.print("\nSerie 2 fibonacci con Do (+): ");
-        serieCaracter2.SerieMasFibonacciDo(numeroElementos);
+        oSerie2.SerieMasFibonacciDo(numeroElementos);
         System.out.print("\nSerie 2 fibonacci con While (+): ");
-        serieCaracter2.SerieMasFibonacciWhile(numeroElementos);
+        oSerie2.SerieMasFibonacciWhile(numeroElementos);
         System.out.println();
 
 
-        Serie6LetrasImpares serieCaracter6 = new Serie6LetrasImpares();
+        Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
-        serieCaracter6.letrasImparesFor(numeroElementos);
+        oSerie6.letrasImparesFor(numeroElementos);
         System.out.print("\nSerie 6 letras impares con Do: ");
-        serieCaracter6.letrasImparesDo(numeroElementos);
+        oSerie6.letrasImparesDo(numeroElementos);
         System.out.print("\nSerie 6 letras impares con While: ");
-        serieCaracter6.letrasImparesWhile(numeroElementos);
+        oSerie6.letrasImparesWhile(numeroElementos);
         System.out.println();
 
         reader.close();

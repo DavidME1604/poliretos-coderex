@@ -9,20 +9,23 @@ public class App {
         System.out.print("Ingrese el numero de elementos: ");
         int tamanioFigura = reader.nextInt();
 
-        Figura2AteriscoMas serie2Cuadrado = new Figura2AteriscoMas();
-        System.out.println("Figura del cuadrado con For (*+): ");
-        serie2Cuadrado.AteriscoMasCuadradoFor(tamanioFigura);
+        Figura2AteriscoMas oFigura2 = new Figura2AteriscoMas();
+        System.out.println("\nFigura del cuadrado con For (*+): ");
+        oFigura2.AteriscoMasCuadradoFor(tamanioFigura);
 
-        Figura7EscalerasIzq serie7EscalerasIzq = new Figura7EscalerasIzq();
-        serie7EscalerasIzq.EscalerasIzqFor(tamanioFigura);
+        Figura7EscalerasIzq oFigura7 = new Figura7EscalerasIzq();
+        System.out.println("\nEscaleras hacia la izquierda: ");
+        oFigura7.EscalerasIzqFor(tamanioFigura);
         System.out.println();
 
-        Figura12TrianguloInvertido serie12TrianguloInver = new Figura12TrianguloInvertido();
-        serie12TrianguloInver.TrianguloInvertido(tamanioFigura);
+        Figura12TrianguloInvertido oFigura12 = new Figura12TrianguloInvertido();
+        System.out.println("\nTriangulo con numeros invertido: ");
+        oFigura12.TrianguloInvertido(tamanioFigura);
         System.out.println();
 
-        Figura17NumerosX serie17NumerosX = new Figura17NumerosX();
-        serie17NumerosX.NumerosX(tamanioFigura);
+        Figura17NumerosX oFigura17 = new Figura17NumerosX();
+        System.out.println("\nNumeros en X: ");
+        oFigura17.NumerosX(tamanioFigura);
         reader.close();
     }
 }
