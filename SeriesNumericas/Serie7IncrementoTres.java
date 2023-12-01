@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie7IncrementoTres {
     /**
      * @author David Esteban Morales Estrella

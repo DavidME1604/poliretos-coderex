@@ -1,3 +1,4 @@
+package SeriesNumericas;
 /**
  * Clase que representa la generación de la serie Ocho.
  * 
@@ -17,10 +18,10 @@ public class Serie8SumaCinco {
     /**
      * Imprime los términos de la serie utilizando un bucle for y un incremento constante de 5.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirIncrementoEnCincoFor(int nPosiciones) {
-        for (int contador = 0, valor = 3; contador < nPosiciones; valor += 5, contador++) {
+    public void imprimirIncrementoEnCincoFor(int numeroElementos) {
+        for (int contador = 0, valor = 3; contador < numeroElementos; valor += 5, contador++) {
             System.out.print(valor + " ");
         }
     }
@@ -28,24 +29,24 @@ public class Serie8SumaCinco {
     /**
      * Imprime los términos de la serie utilizando un bucle do-while y un incremento constante de 5.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirIncrementoEnCincoDoWhile(int nPosiciones) {
+    public void imprimirIncrementoEnCincoDoWhile(int numeroElementos) {
         int contador = 0, valor = 3;
         do {
             System.out.print(valor + " ");
             valor += 5;
-        } while (++contador < nPosiciones);
+        } while (++contador < numeroElementos);
     }
 
     /**
      * Imprime los términos de la serie utilizando un bucle while y un incremento constante de 5.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirIncrementoEnCincoWhile(int nPosiciones) {
+    public void imprimirIncrementoEnCincoWhile(int numeroElementos) {
         int contador = 0, valor = 3;
-        while (contador++ < nPosiciones) {
+        while (contador++ < numeroElementos) {
             System.out.print(valor + " ");
             valor += 5;
         }

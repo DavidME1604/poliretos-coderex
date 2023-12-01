@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie4FibonacciPar {
 /*
  *@author José David Pallares Santamaría

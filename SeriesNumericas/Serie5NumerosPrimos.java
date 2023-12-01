@@ -1,3 +1,4 @@
+package SeriesNumericas;
 
     /**
  * Clase que representa la generación de la serie cinco.
@@ -17,13 +18,13 @@ public class Serie5NumerosPrimos {
     /**
      * Imprime los números primos utilizando un bucle while y un contador.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirPrimosWhile(int nPosiciones) {
+    public void imprimirPrimosWhile(int numeroElementos) {
         int contador = 0;
         int numero = 2;
 
-        while (contador < nPosiciones) {
+        while (contador < numeroElementos) {
             if (esPrimo(numero)) {
                 System.out.print(numero + " ");
                 contador++;
@@ -35,9 +36,9 @@ public class Serie5NumerosPrimos {
     /**
      * Imprime los números primos utilizando un bucle do-while y un contador.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirPrimosDoWhile(int nPosiciones) {
+    public void imprimirPrimosDoWhile(int numeroElementos) {
         int contador = 0;
         int numero = 2;
         
@@ -47,16 +48,16 @@ public class Serie5NumerosPrimos {
                 contador++;
             }
             numero++;
-        } while (contador < nPosiciones);
+        } while (contador < numeroElementos);
     }
 
     /**
      * Imprime los números primos utilizando un bucle for y un contador.
      * 
-     * @param nPosiciones El número de términos que se imprimirán.
+     * @param numeroElementos El número de términos que se imprimirán.
      */
-    public void imprimirPrimosFor(int nPosiciones) {
-        for (int contador = 0, numero = 2; contador < nPosiciones; numero++) {
+    public void imprimirPrimosFor(int numeroElementos) {
+        for (int contador = 0, numero = 2; contador < numeroElementos; numero++) {
             if (esPrimo(numero)) {
                 System.out.print(numero + " ");
                 contador++;

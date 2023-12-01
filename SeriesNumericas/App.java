@@ -1,3 +1,4 @@
+package SeriesNumericas;
 import java.util.Scanner;
 
 public class App {

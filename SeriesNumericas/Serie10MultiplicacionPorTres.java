@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie10MultiplicacionPorTres {
 /*
  *@author José David Pallares Santamaría

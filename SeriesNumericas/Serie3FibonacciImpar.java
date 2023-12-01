@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie3FibonacciImpar {
     /*
      * @author Johann Vladimir Pasquel Montenegro

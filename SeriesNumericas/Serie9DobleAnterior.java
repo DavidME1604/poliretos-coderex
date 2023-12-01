@@ -1,3 +1,4 @@
+package SeriesNumericas;
 /**
  * Clase que representa la generación de la serie Serie9.
  * 

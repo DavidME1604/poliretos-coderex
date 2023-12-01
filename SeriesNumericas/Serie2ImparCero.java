@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie2ImparCero {
     /**
      * @author David Esteban Morales Estrella

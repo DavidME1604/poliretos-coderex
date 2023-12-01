@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie12MultiplosDos {
     /**
      * @author David Esteban Morales Estrella

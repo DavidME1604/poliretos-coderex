@@ -1,3 +1,4 @@
+package SeriesNumericas;
 public class Serie6CuadradosSucesivos {
     /*
      * @author Johann Vladimir Pasquel Montenegro
