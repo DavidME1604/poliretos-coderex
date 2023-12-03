@@ -11,10 +11,11 @@ public class App {
         Serie2MasFibonacci oSerie2 = new Serie2MasFibonacci();
         System.out.print("Serie 2 fibonacci con For (+): ");
         oSerie2.SerieMasFibonacciFor(numeroElementos);
-        System.out.print("\nSerie 2 fibonacci con Do (+): ");
-        oSerie2.SerieMasFibonacciDo(numeroElementos);
-        System.out.print("\nSerie 2 fibonacci con While (+): ");
-        oSerie2.SerieMasFibonacciWhile(numeroElementos);
+        System.out.println();
+
+        Serie5palitos oSerie5 = new Serie5palitos();
+        System.out.println("\nSerie 5 con lineas inclinadas: ");
+        oSerie5.palitosinclinados(numeroElementos);
         System.out.println();
 
         
@@ -26,10 +27,11 @@ public class App {
         Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
         oSerie6.letrasImparesFor(numeroElementos);
-        System.out.print("\nSerie 6 letras impares con Do: ");
-        oSerie6.letrasImparesDo(numeroElementos);
-        System.out.print("\nSerie 6 letras impares con While: ");
-        oSerie6.letrasImparesWhile(numeroElementos);
+        System.out.println();
+
+        Serie10letrassum2 oSerie10 = new Serie10letrassum2();
+        System.out.println("\nSerie 10 de suma iterada con letras: ");
+        oSerie10.sumaelementosantes(numeroElementos);
         System.out.println();
 
         Serie7AbcAumento oSerie7 = new Serie7AbcAumento();

@@ -25,6 +25,7 @@ public class Serie2MasFibonacci {
         }
     }
 
+
     /**
      * Serie S2 con Do-While
      * @param numeroElementos
@@ -62,4 +63,5 @@ public class Serie2MasFibonacci {
             contadorElementos++;
         }
     }
+
 }
