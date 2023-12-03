@@ -21,11 +21,11 @@ public class Cadena4EliminarLetra {
      * @param nombre
      * @param apellido
      */
-    public static void EliminarLetra() {
+    public void EliminarLetra() {
         Scanner reader = new Scanner(System.in);
-        System.out.println("Ingresa una frase:");
+        System.out.print("Ingresa una frase:");
         String frase = reader.nextLine();
-        System.out.println("Ingresa una letra a eliminar:");
+        System.out.print("Ingresa una letra a eliminar:");
         char letraEliminar = reader.next().charAt(0);
         String fraseSinLetra = frase.replace(String.valueOf(letraEliminar), "");
         System.out.println("Frase resultante: " + fraseSinLetra);

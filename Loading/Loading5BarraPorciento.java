@@ -29,8 +29,6 @@ public class Loading5BarraPorciento {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
         }
     }
     private static void mostrarBarraDeProgreso(int caracteresLlenos, int longitudBarra) {

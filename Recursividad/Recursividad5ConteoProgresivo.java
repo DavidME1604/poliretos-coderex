@@ -14,11 +14,11 @@ public class Recursividad5ConteoProgresivo {
      *  
      *...
      */
-    public static void conteoProgresivo(int n) {
+    public  void conteoProgresivo(int n) {
         conteoRecursivo(1, n);
     }
 
-    private static void conteoRecursivo(int actual, int n) {
+    private  void conteoRecursivo(int actual, int n) {
         if (actual <= n) {
             System.out.println("Avance: " + actual);
             pausa(500); // Pausa de medio segundo para visualizar el avance
@@ -27,7 +27,7 @@ public class Recursividad5ConteoProgresivo {
         }
     }
 
-    private static void pausa(int milisegundos) {
+    private void pausa(int milisegundos) {
         try {
             Thread.sleep(milisegundos);
         } catch (InterruptedException e) {

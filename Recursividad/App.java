@@ -23,7 +23,7 @@ public class App {
         System.out.print("Ingrese el exponente: ");
         int exp = reader.nextInt();
         oRecursivo4.mostrar(numBase, exp);
-        System.out.println();
+        System.out.println("\n");
 
         Recursividad5ConteoProgresivo oRecursivo5 = new Recursividad5ConteoProgresivo();
         System.out.println("Contador progresivo: ");

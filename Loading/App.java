@@ -11,29 +11,28 @@ public class App {
         oLoading2.hashtagload();
         System.out.println();
 
-
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
         System.out.println("Cargando bolitas (oo0)...");
         oLoading4.bolitas();
-        System.out.println();
+        System.out.println("\n");
 
         Loading5BarraPorciento oLoading5 = new Loading5BarraPorciento();
         System.out.println("Cargando el porcentaje");
         oLoading5.BarraPorciento();
+        System.out.println();
 
         Loading7flecha oLoading7 = new Loading7flecha();
         System.out.println("\nBarra de carga con flecha: ");
         oLoading7.barraflecha();
-
         System.out.println();
 
 
         Loading9Nombre oLoading9 = new Loading9Nombre();
         System.out.println("Cargando con nombre...");
-        System.out.print("Ingresa tu nombre y apellido sin espacios");
+        System.out.print("Ingresa tu nombre y apellido sin espacios: ");
         String nombre = reader.nextLine();
         oLoading9.Nombre(nombre);
-        System.out.println();
+        System.out.println("\n");
 
         Loading10Figura oLoading10 = new Loading10Figura();
         System.out.println("Figura moviendose");

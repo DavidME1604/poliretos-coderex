@@ -24,7 +24,7 @@ public class Figura13TrianguloNum {
      */
     public void TrianguloNum(int tamanioFigura){
         int filas = tamanioFigura;
-        for (int i=1 ;i<filas;i++){
+        for (int i=1 ;i<=filas;i++){
             for(int j=1; j<=i;j++){
                 System.out.print(j);
             }

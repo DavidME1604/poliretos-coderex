@@ -15,10 +15,10 @@ public class App {
         System.out.println();
 
 
-
         Arrays4NombreMatriz oArray4 = new Arrays4NombreMatriz();
         System.out.print("Ingrese su nombre: ");
         String nombre=reader.nextLine();
+        nombre=reader.nextLine();
         System.out.print("Ingrese su apellido: ");
         String apellido=reader.nextLine();
         System.out.println("Nombre en una matriz en X: ");
@@ -26,8 +26,7 @@ public class App {
         System.out.println();
 
         Arrays5MatrizAleatoria oArrray5 = new Arrays5MatrizAleatoria();
-        System.out.println("Ingrese su nombre Completo: ");
-
+        System.out.print("Ingrese su nombre Completo: ");
         String nombreCompleto=reader.nextLine();
         System.out.println("Matrices Aleatorias");
         oArrray5.MatrizAleatoria(nombreCompleto);

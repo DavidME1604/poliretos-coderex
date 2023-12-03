@@ -22,7 +22,7 @@ public class Cadena9LetrasAlternantes {
      */
     public void LetrasAlternantes(){
         Scanner reader = new Scanner(System.in);
-        System.out.println("Ingresa una frase: ");
+        System.out.print("Ingresa una frase: ");
         String frase = reader.nextLine();
 
         String cambio = LetrasAlternantes(frase);

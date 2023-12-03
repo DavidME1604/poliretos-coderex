@@ -23,7 +23,7 @@ public class Cadena8Anagramas {
         int indicePalabra = (int) (Math.random() * 10);
         String anagrama, anagramaCorrecto;
         System.out
-                .println("Juguemos a los anagramas, tendras 3 intentos. Esta es tu palabra " + conjunto[indicePalabra]);
+                .println("Juguemos a los anagramas, tendras 3 intentos. Esta es tu palabra: " + conjunto[indicePalabra]);
         if (indicePalabra % 2 == 0) {
             anagramaCorrecto = conjunto[indicePalabra + 1];
         } else {

@@ -19,7 +19,7 @@ public class Figura3TrianguloIzquierda {
      */
     public void TrianguloIzquierda(int tamanioFigura){
         int niveles=tamanioFigura;
-        for (int i = 0; i <niveles ; i++) {
+        for (int i = 0; i <=niveles ; i++) {
             for (int k=1; k<=i; k++){
                 System.out.print("*");
             }
