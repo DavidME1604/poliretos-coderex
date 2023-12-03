@@ -18,6 +18,11 @@ public class App {
         oSerie5.palitosinclinados(numeroElementos);
         System.out.println();
 
+        
+        Serie3MasAumento oSerie3 = new Serie3MasAumento();
+        oSerie3.Serie3(numeroElementos);
+        System.out.println();
+
 
         Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
@@ -27,6 +32,10 @@ public class App {
         Serie10letrassum2 oSerie10 = new Serie10letrassum2();
         System.out.println("\nSerie 10 de suma iterada con letras: ");
         oSerie10.sumaelementosantes(numeroElementos);
+        System.out.println();
+
+        Serie7AbcAumento oSerie7 = new Serie7AbcAumento();
+        oSerie7.AbcAumento(numeroElementos);
         System.out.println();
 
         reader.close();

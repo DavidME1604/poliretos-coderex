@@ -17,9 +17,14 @@ public class App {
         oLoading4.bolitas();
         System.out.println();
 
+        Loading5BarraPorciento oLoading5 = new Loading5BarraPorciento();
+        System.out.println("Cargando el porcentaje");
+        oLoading5.BarraPorciento();
+
         Loading7flecha oLoading7 = new Loading7flecha();
         System.out.println("\nBarra de carga con flecha: ");
         oLoading7.barraflecha();
+
         System.out.println();
 
 
@@ -28,6 +33,11 @@ public class App {
         System.out.print("Ingresa tu nombre y apellido sin espacios");
         String nombre = reader.nextLine();
         oLoading9.Nombre(nombre);
+        System.out.println();
+
+        Loading10Figura oLoading10 = new Loading10Figura();
+        System.out.println("Figura moviendose");
+        oLoading10.Figura();
         System.out.println();
 
         reader.close();
