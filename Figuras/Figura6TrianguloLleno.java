@@ -1,4 +1,22 @@
 package Figuras;
+/**
+     * @author Elizabeth Lopez Zelaya
+     * @Github Lorent777
+     * @version 2.0
+     * 
+     * @since 2023-12-03
+     * 
+     * @license
+     * 
+     *         
+    F6:                                                                     1
+    	     *
+    	    ***
+    	   *****
+    	  *******
+    	 *********
+     */
+
 
 public class Figura6TrianguloLleno {
  /**
@@ -6,7 +24,7 @@ public class Figura6TrianguloLleno {
          * @param tamanioFigura
          */
     public void TrianguloLleno(int tamanioFigura) {
-        
+
         for (int i = 0; i < tamanioFigura; i++) {
             // Imprimir espacios en blanco antes de los asteriscos
             for (int j = tamanioFigura - i - 1; j > 0; j--) {
