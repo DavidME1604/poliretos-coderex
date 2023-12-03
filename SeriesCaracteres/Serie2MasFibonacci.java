@@ -24,42 +24,4 @@ public class Serie2MasFibonacci {
             System.out.print(" ");
         }
     }
-
-    /**
-     * Serie S2 con Do-While
-     * @param numeroElementos
-     */
-    public void SerieMasFibonacciDo(int numeroElementos){
-        int nActual=0, nSiguiente=1, contadorElementos=0, contadorCaracteres = 0;
-        do {
-            nSiguiente+=nActual;
-            nActual=nSiguiente-nActual;
-            contadorElementos++;
-            contadorCaracteres = 0;
-             do {
-                System.out.print("+");
-                contadorCaracteres++;
-            } while (contadorCaracteres<nActual);
-            System.out.print(" ");
-        } while (contadorElementos<numeroElementos);
-    }
-
-    /**
-     * Serie S2 con While
-     * @param numeroElementos
-     */
-    public void SerieMasFibonacciWhile(int numeroElementos){
-        int nActual=0, nSiguiente=1, contadorElementos=0, contadorCaracteres = 0;
-        while (contadorElementos <= numeroElementos) {
-            while (contadorCaracteres<nActual) {
-                System.out.print("+");
-                contadorCaracteres++;
-            }
-            System.out.print(" ");
-            contadorCaracteres=0;
-            nSiguiente+=nActual;
-            nActual=nSiguiente-nActual;
-            contadorElementos++;
-        }
-    }
 }
