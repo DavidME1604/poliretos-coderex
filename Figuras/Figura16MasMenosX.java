@@ -1,5 +1,26 @@
 package Figuras;
 
+/**
+     * @author Elizabeth Lopez Zelaya
+     * @Github Lorent777
+     * @version 2.0
+     * 
+     * @since 2023-12-01
+     * 
+     * @license
+     * 
+     *         
+     *     F16:                                                                    1
+            +				+
+                -		-
+                    +
+                -		-
+            +				+                                                    
+
+     */
+
+
+
 public class Figura16MasMenosX {
 
     public static void MasMenosX(int tamanioFigura) {
