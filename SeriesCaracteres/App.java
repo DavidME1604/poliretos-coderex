@@ -13,10 +13,20 @@ public class App {
         oSerie2.SerieMasFibonacciFor(numeroElementos);
         System.out.println();
 
+        Serie5palitos oSerie5 = new Serie5palitos();
+        System.out.println("\nSerie 5 con lineas inclinadas: ");
+        oSerie5.palitosinclinados(numeroElementos);
+        System.out.println();
+
 
         Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
         oSerie6.letrasImparesFor(numeroElementos);
+        System.out.println();
+
+        Serie10letrassum2 oSerie10 = new Serie10letrassum2();
+        System.out.println("\nSerie 10 de suma iterada con letras: ");
+        oSerie10.sumaelementosantes(numeroElementos);
         System.out.println();
 
         reader.close();

@@ -23,16 +23,13 @@ public class Figura15EscaleraPascal {
     * @param tamanioFigura
     */
    public void Pascal(int tamanioFigura){
-      for (int i=0; i<tamanioFigura;i++) {
-         int num=1;
-         for(int k=0;k<tamanioFigura-i;k++){
-            System.out.print("   ");
-         }
-         for(int j = 0; j <= i; j++){
-            System.out.print(num + "   ");
-            num=num*(i - j)/(j + 1);
+      for (int i = 0; i < tamanioFigura; i++) {
+         int num = 1;
+         for (int j = 0; j <= i; j++) {
+             System.out.print(num + " ");
+             num = num * (i - j) / (j + 1);
          }
          System.out.println();
-      }
+     }
    }
 }
