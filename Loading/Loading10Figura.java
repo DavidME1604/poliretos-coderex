@@ -1,72 +1,60 @@
 package Loading;
 
 public class Loading10Figura {
-    /*
-     * @author José David Pallares Santamaría
+    /**
+     * @author Jose David Pallares Santamaria
      * @Github JosDavP
      * @version 2.0
      * 
-     * since 2023-12-3
+     * @since 2023-12-03
      * 
      * @license
-     * Mover la figura de derecha a izquierda
-     *      \|||/
-     *      (> <)
-     *   ooO-(_)-Ooo
      * 
-     *
+     *  Desplazar la figura a la derecha y regresar            
+     *    \|||/
+     *    (> <)
+     * ooO-(_)-Ooo
      */
-    public  void Figura() {
-        animarFigura();
-    }
+    public void Figura() {
+        int distancia = 20; 
 
-    public static void animarFigura() {
-        int desplazamientoMaximo = 10;
-        int delayMillis = 100;
+        for (int i = 0; i <= distancia * 2; i++) {
 
-        for (int i = 0; i < desplazamientoMaximo; i++) {
-            imprimirFigura(i);
-            esperar(delayMillis);
-            borrarConsola();
-        }
+            boolean haciaDerecha = i < distancia;
 
-        for (int i = desplazamientoMaximo - 2; i >= 0; i--) {
-            imprimirFigura(i);
-            esperar(delayMillis);
-            borrarConsola();
-        }
-    }
+            int espacios = haciaDerecha ? distancia - i : i - distancia;
 
-    public static void imprimirFigura(int desplazamiento) {
+            for (int j = 0; j < espacios; j++) {
+                System.out.print(" ");
+            }
 
-        for (int i = 0; i < desplazamiento; i++) {
-            System.out.print(" ");
-        }
-
-        System.out.println("  \\|||/");
-        for (int i = 0; i < desplazamiento; i++) {
-            System.out.print(" ");
-        }
-        System.out.println("   (> <)");
-        for (int i = 0; i < desplazamiento; i++) {
-            System.out.print(" ");
-        }
-        System.out.println("ooO-(_)-Ooo");
-    }
-
-    public static void borrarConsola() {
-
-        for (int i = 0; i < 50; i++) {
+            System.out.print("    \\|||/");
             System.out.println();
+
+            for (int k = 0; k < espacios; k++) {
+                System.out.print(" ");
+            }
+
+            System.out.print("    (> <)");
+            System.out.println();
+
+            for (int l = 0; l < espacios; l++) {
+                System.out.print(" ");
+            }
+
+            System.out.println(" ooO-(_)-Ooo");
+
+            int porcentaje = (int) (((double) i / (distancia * 2)) * 100);
+            System.out.println("Porcentaje: " + porcentaje + "%");
+
+            try {
+
+                Thread.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
         }
     }
-
-    public static void esperar(int milisegundos) {
-        try {
-            Thread.sleep(milisegundos);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
 }

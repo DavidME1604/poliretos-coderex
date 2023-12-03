@@ -14,16 +14,16 @@ public class Figura8EscalerasDer {
                         ___|
                     ___|
                 ___|
-     */
-    public void EscalerasDer(int tamanioFigura){
-        int niveles= tamanioFigura;
-        for(int i=1; i<= niveles; i++){
-            for(int j=1; j<=5*(niveles-i); j++){
+*/
+    public void EscalerasDer(int tamanioFigura) {
+        int niveles = tamanioFigura;
+        for (int i = 1; i <= niveles; i++) {
+            // Ajusta el número de espacios para alinear las escaleras
+            for (int j = 1; j <= 4 * (niveles - i); j++) {
                 System.out.print(" ");
             }
-        System.out.print("___|");
-        System.out.println();
+            System.out.print(" ___|");
+            System.out.println();
         }
     }
-
 }
