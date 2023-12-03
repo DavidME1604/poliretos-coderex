@@ -36,6 +36,11 @@ public class App {
         oFigura10.Escalera(tamanioFigura);
         System.out.println();
 
+        Figura11EscaleraIncrementa oFigura11 = new Figura11EscaleraIncrementa();
+        System.out.println("\n[ Figura 11 ]- Escalera que incrementa con (-): ");
+        oFigura11.EscaleraIncrementa(tamanioFigura);
+        System.out.println();
+
         Figura12TrianguloInvertido oFigura12 = new Figura12TrianguloInvertido();
         System.out.println("\nTriangulo con numeros invertido: ");
         oFigura12.TrianguloInvertido(tamanioFigura);
