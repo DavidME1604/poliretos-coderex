@@ -12,6 +12,12 @@ public class App {
         oCadena1.contarvocal(fraseingresada);
         System.out.println();
 
+        Cadena2ContarVocal oCadena2 = new Cadena2ContarVocal();
+        System.out.print("[ Cad. 2 ]- Ingresa una palabra: ");
+        String palabraIngresada = reader.nextLine();
+        oCadena2.ContarVocal(palabraIngresada);
+        System.out.println();
+
         Cadena3EliminarVocal oCadena3 = new Cadena3EliminarVocal();
         System.out.println("Elimina vocales de una palabra");
         System.out.print("Ingresa una vocal: ");
