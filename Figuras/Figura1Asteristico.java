@@ -4,7 +4,7 @@ package Figuras;
      * @Github Lorent777
      * @version 2.0
      * 
-     * @since 2023-12-21
+     * @since 2023-12-01
      * 
      * @license
      * 
