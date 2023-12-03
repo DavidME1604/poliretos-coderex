@@ -33,6 +33,14 @@ public class App {
         oCadean6.InversoYmayuscula(fraseoriginal);
         System.out.println();
 
+        Cadena7EliminarJ oCadena7 = new Cadena7EliminarJ();
+        System.out.print("[ Cad. 7 ]- Ingresa una palabra y eliminare la \"J\": ");
+        String palabraJ = reader.nextLine();
+        oCadena7.eliminarJota(palabraJ);
+        System.out.println();
+
+
+
         Cadena4EliminarLetra oCadena4 = new Cadena4EliminarLetra();
         System.out.print("Elimina las letras repetidas de la frase: \n");
         oCadena4.EliminarLetra();
