@@ -3,7 +3,7 @@ package Arrays;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
         Array2Iniciales oArray2 = new Array2Iniciales();
@@ -25,10 +25,17 @@ public class App {
         oArray4.nombreMatriz(nombre, apellido);
         System.out.println();
 
+        Arrays5MatrizAleatoria oArrray5 = new Arrays5MatrizAleatoria();
+        System.out.println("Ingrese su nombre Completo: ");
+
+        String nombreCompleto=reader.nextLine();
+        System.out.println("Matrices Aleatorias");
+        oArrray5.MatrizAleatoria(nombreCompleto);
+        System.out.println();
         
 
 
         reader.close();
-    }
+        }
 
 }

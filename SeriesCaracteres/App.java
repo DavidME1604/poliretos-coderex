@@ -17,6 +17,11 @@ public class App {
         oSerie2.SerieMasFibonacciWhile(numeroElementos);
         System.out.println();
 
+        
+        Serie3MasAumento oSerie3 = new Serie3MasAumento();
+        oSerie3.Serie3(numeroElementos);
+        System.out.println();
+
 
         Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
@@ -25,6 +30,10 @@ public class App {
         oSerie6.letrasImparesDo(numeroElementos);
         System.out.print("\nSerie 6 letras impares con While: ");
         oSerie6.letrasImparesWhile(numeroElementos);
+        System.out.println();
+
+        Serie7AbcAumento oSerie7 = new Serie7AbcAumento();
+        oSerie7.AbcAumento(numeroElementos);
         System.out.println();
 
         reader.close();

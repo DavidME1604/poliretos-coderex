@@ -36,7 +36,7 @@ public class Serie2MasFibonacci {
             nActual=nSiguiente-nActual;
             contadorElementos++;
             contadorCaracteres = 0;
-             do {
+            do {
                 System.out.print("+");
                 contadorCaracteres++;
             } while (contadorCaracteres<nActual);
