@@ -26,7 +26,6 @@ public class Figura6TrianguloLleno {
     public void TrianguloLleno(int tamanioFigura) {
 
         for (int i = 0; i < tamanioFigura; i++) {
-            // Imprimir espacios en blanco antes de los asteriscos
             for (int j = tamanioFigura - i - 1; j > 0; j--) {
                 System.out.print(" ");
             }
