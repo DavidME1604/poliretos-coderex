@@ -1,16 +1,20 @@
 package SeriesNumericas;
 
     /**
- * Clase que representa la generación de la serie cinco.
- * 
- *  * <p>
- * La serie S5 sigue un patrón de aumento en los números primos. Por lo tanto, 
- * la serie se forma como sigue: 3, 8, 13, 18, 23, 28, 33, 38, ..
- * </p>
- * 
- * @author: Elizabeth Lorena Lopez Zelaya
- * @version: 1.0
- * @since: 19 noviembre de 2023
+     * Clase que representa la generación de la serie cinco.
+     * 
+     *  * <p>
+     * La serie 5 sigue un patrón de aumento en los números primos. Por lo tanto , 
+     * la serie se forma como sigue: 3, 8, 13, 18, 23, 28, 33, 38, ..
+     * </p>
+     * 
+     * @author Elizabeth Lopez Zelaya
+     * @Github Lorent777
+     * @version 2.0
+     * 
+     * @since 2023-11-21
+     * 
+     * @license
  */
 
 public class Serie5NumerosPrimos {
