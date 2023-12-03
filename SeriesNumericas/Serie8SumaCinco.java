@@ -8,10 +8,10 @@ package SeriesNumericas;
  * la serie se forma como sigue: 3, 8, 13, 18, 23, 28, 33, 38, ..
  * </p>
  * 
- * @author Lorena Lopez
+ * @author Elizabeth Lopez Zelaya
  * @version 1.0
  * @since 20 de noviembre de 2023
- * @Github: lorent777
+ * @Github: Lorent777
  */
 public class Serie8SumaCinco {
     

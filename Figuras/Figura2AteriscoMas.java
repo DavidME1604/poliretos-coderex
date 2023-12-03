@@ -1,6 +1,24 @@
 package Figuras;
-
+/**
+     * @author David Esteban Morales Estrella
+     * @Github DavidME1604
+     * @version 2.0
+     * 
+     * @since 2023-11-21
+     * 
+     * @license
+     * 
+     *      * + * + *
+            +       +
+            *       *
+            +       +
+            * + * + *
+     */
 public class Figura2AteriscoMas {
+    /**
+     * Cuadrado con *+
+     * @param tamanioFigura
+     */
     public void AteriscoMasCuadradoFor(int tamanioFigura) {
         char caracter = '*';
         for (int i = 0; i < tamanioFigura; i++) {

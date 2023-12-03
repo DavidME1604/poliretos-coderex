@@ -26,6 +26,8 @@ public class App {
         Figura17NumerosX oFigura17 = new Figura17NumerosX();
         System.out.println("\nNumeros en X: ");
         oFigura17.NumerosX(tamanioFigura);
+
+        
         reader.close();
     }
 }

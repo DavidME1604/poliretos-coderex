@@ -1,13 +1,23 @@
 package Loading;
-
-import java.util.Scanner;
+/**
+     * @author David Esteban Morales Estrella
+     * @Github DavidME1604
+     * @version 2.0
+     * 
+     * @since 2023-11-21
+     * 
+     * @license
+     * 
+     * Carga con tu nombre
+     */
 
 public class Loading9Nombre {
-    public void Nombre() {
-        Scanner reader = new Scanner(System.in);
-
-        System.out.println("Ingresa tu nombre y apellido sin espacios");
-        String nombre = reader.nextLine();
+    /**
+     * 
+     * @param nombre
+     */
+    public void Nombre(String nombre) {
+        
         String[] partes = new String[nombre.length()];
         for (int i = 0; i < nombre.length(); i++) {
             partes[i] = "";
