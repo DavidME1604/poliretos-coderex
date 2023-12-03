@@ -25,6 +25,14 @@ public class App {
         oRecursivo4.mostrar(numBase, exp);
         System.out.println();
 
+        Recursividad5ConteoProgresivo oRecursivo5 = new Recursividad5ConteoProgresivo();
+        System.out.println("Contador progresivo: ");
+        System.out.print("Ingrese hasta que numero desea contar: ");
+        int n = reader.nextInt();
+        oRecursivo5.conteoProgresivo(n);
+        System.out.println();
+
+
         reader.close();
 
     }
