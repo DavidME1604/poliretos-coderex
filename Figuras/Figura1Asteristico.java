@@ -17,16 +17,32 @@ package Figuras;
      */
 
 public class Figura1Asteristico {
+    /**
+     * Cuadrado con (*)
+     * @param tamanioFigura
+     */
 
-    public void CuadroConAsteriscos(int tamanioFigura) {
-        for (int i = 0; i < tamanioFigura; i++) {
-            for (int j = 0; j < tamanioFigura; j++) {
-                boolean esBorde = i == 0 || i == tamanioFigura - 1 || j == 0 || j == tamanioFigura - 1;
-                System.out.print(esBorde ? "* " : "  ");
+     public void CuadroConAsteriscos(int tamanioFigura) {
+        
+        for (int filaOne = 0 ; filaOne < tamanioFigura ; filaOne++){
+            System.out.print("* ");
+        } 
+
+        System.out.println();
+
+        for (int columnas = 2 ; columnas < tamanioFigura ; columnas++){
+            System.out.print("*");
+
+            for ( int esp = 2 ; esp < tamanioFigura ; esp++){
+                System.out.print("  ");
             }
-            System.out.println();
+            System.out.println(" *");   
         }
-    }
+        
+        for (int filaTwo = 0; filaTwo < tamanioFigura; filaTwo++){ 
+            System.out.print("* ");
+        }
 
+    }
 
 }
