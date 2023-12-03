@@ -20,20 +20,19 @@ package Figuras;
 public class Figura11EscaleraIncrementa {
 
         /**
-         * Imprime una escalera con bloques que incrementan en cada nivel.
+         * Imprime una escalera con bloques que incrementan en cada nivel(máxmo 5).
          * 
          * @param tamanioFigura El tamaño de la escalera.
          */
         public void EscaleraIncrementa(int tamanioFigura) {
-            // Recorremos cada nivel de la escalera
+            
             for (int i = 0; i < tamanioFigura; i++) {
-                // Imprimimos espacios antes de cada bloque en el nivel actual
-                for (int j = 0; j < i; j++) {
-                    System.out.print("           "); // Incremento en la cantidad de espacios
+                
+                for (int j = 0; j < i ; j++) {
+                    System.out.print("          ");
                 }
-    
-                // Imprimimos el bloque en el nivel actual con guiones adicionales
-                System.out.println("|" + " _ _".repeat(i + 1));
+                System.out.println("|" + " _".repeat(i + 1));
             }
         }
 }
+
