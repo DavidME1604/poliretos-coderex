@@ -22,6 +22,10 @@ public class App {
         oFigura5.Piramideasterisco(tamanioFigura);
         System.out.println();
 
+        Figura6TrianguloLleno oFigura6 = new Figura6TrianguloLleno();
+        System.out.println("\n[Figura 6 ]- Triángulo lleno con asteriscos(*) : ");
+        oFigura6.TrianguloLleno(tamanioFigura);
+
         Figura7EscalerasIzq oFigura7 = new Figura7EscalerasIzq();
         System.out.println("\nEscaleras hacia la izquierda: ");
         oFigura7.EscalerasIzqFor(tamanioFigura);
