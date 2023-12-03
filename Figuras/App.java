@@ -61,11 +61,16 @@ public class App {
         Figura13TrianguloNum oFigura13 = new Figura13TrianguloNum();
         System.out.println("\nTriangulo con numeros: ");
         oFigura13.TrianguloNum(tamanioFigura);
+        System.out.println();
 
         Figura15EscaleraPascal oFigura15 = new Figura15EscaleraPascal();
         System.out.println("\nEscalera de Pascal: ");
         oFigura15.Pascal(tamanioFigura);
+        System.out.println();
 
+        Figura16MasMenosX oFigura16 = new Figura16MasMenosX();
+        System.out.println("\n[ Figura 16 ] - Mas y menos X: ");
+        oFigura16.MasMenosX(tamanioFigura);
         System.out.println();
 
         Figura17NumerosX oFigura17 = new Figura17NumerosX();
