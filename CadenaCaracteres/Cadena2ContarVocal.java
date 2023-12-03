@@ -1,4 +1,18 @@
 package CadenaCaracteres;
+/**
+     * @author Elizabeth Lopez Zelaya
+     * @Github Lorent777
+     * @version 2.0
+     * 
+     * @since 2023-12-01
+     * 
+     * @license
+     * 
+     *         
+ C02)    Pedir una frase y contador las letras.                          1
+            Ejemplo, frase : ballena
+                    salida: tiene 4 letras
+     */
 
 public class Cadena2ContarVocal {
     public void ContarVocal(String palabraIngresada) {
