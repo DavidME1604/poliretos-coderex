@@ -23,24 +23,25 @@ public class Figura1Asteristico {
      */
 
      public void CuadroConAsteriscos(int tamanioFigura) {
+
         
         for (int filaOne = 0 ; filaOne < tamanioFigura ; filaOne++){
-            System.out.print("* ");
+            System.out.print( "* ");
         } 
 
         System.out.println();
 
         for (int columnas = 2 ; columnas < tamanioFigura ; columnas++){
-            System.out.print("*");
+            System.out.print( "* ");
 
             for ( int esp = 2 ; esp < tamanioFigura ; esp++){
                 System.out.print("  ");
             }
-            System.out.println(" *");   
+            System.out.println( "*");   
         }
         
         for (int filaTwo = 0; filaTwo < tamanioFigura; filaTwo++){ 
-            System.out.print("* ");
+            System.out.print( "* ");
         }
 
     }
