@@ -17,6 +17,14 @@ public class App {
         oArray4.nombreMatriz(nombre, apellido);
         System.out.println();
 
+        Array2Iniciales oArray2 = new Array2Iniciales();
+        System.out.print("Ingresa el tamaño de la matriz: ");
+        int tamaño = reader.nextInt();
+        System.out.print("Ingresa el caracter que deseas usar: ");
+        char caracter = reader.next().charAt(0);
+        oArray2.incialesletras(tamaño,caracter);
+        System.out.println();
+
 
         reader.close();
     }
