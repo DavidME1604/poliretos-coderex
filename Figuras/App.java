@@ -10,7 +10,7 @@ public class App {
         int tamanioFigura = reader.nextInt();
 
         Figura1Asteristico oFigura1 = new Figura1Asteristico();
-        System.out.println("\n[ Figura 1] - Cuadrado con asterísticos(*): ");
+        System.out.println("\n[ Figura 1 ] - Cuadrado con asterísticos(*): ");
         oFigura1.CuadroConAsteriscos(tamanioFigura);
 
         Figura2AteriscoMas oFigura2 = new Figura2AteriscoMas();
