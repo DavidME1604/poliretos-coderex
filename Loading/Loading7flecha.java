@@ -2,6 +2,19 @@
  * L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
     [====/           ] 20%
  */
+/*
+    * @author Johann Vladimir Pasquel Montenegro
+    * @Github Vladimirjon
+    * version 1.0  
+    *
+    * @since 2023-12-01
+    * 
+    * @license
+    * L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
+    * [====/           ] 20%
+    * 
+    *La serie se carga con (===) y va cambiando la punta de la flecha    
+*/
 
 package Loading;
 

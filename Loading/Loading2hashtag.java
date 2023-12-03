@@ -1,7 +1,16 @@
 /*
- * Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
-    [###         ] 20%
- */
+    * @author Johann Vladimir Pasquel Montenegro
+    * @Github Vladimirjon
+    * version 1.0  
+    *
+    * @since 2023-12-01
+    * 
+    * @license
+    * L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
+    * [###         ] 20%
+    * 
+    *La serie se carga con (#)    
+*/
 
 package Loading;
 

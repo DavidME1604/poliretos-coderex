@@ -1,10 +1,22 @@
 /*
- * S9:  a  b  c  dd  eee  fffff  gggggggg ... 
- */
+    * @author Johann Vladimir Pasquel Montenegro
+    * @Github Vladimirjon
+    * version 1.0  
+    *
+    * @since 2023-12-01
+    * 
+    * @license
+    * S9:  a  b  c  dd  eee  fffff  gggggggg ... 
+*/
 
 package SeriesCaracteres;
 
 public class Serie10letrassum2 {
+    /**
+     * @param numeroElementos
+     * La serie consiste en sumar los elementos anteriores exceptuando el 
+     * inmediatamente anterior
+     */
     public void sumaelementosantes(int numeroElementos){
         int[] series = new int[numeroElementos];
         series[0] = 1;
