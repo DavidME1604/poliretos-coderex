@@ -2,7 +2,20 @@ package CadenaCaracteres;
 
 import java.util.Scanner;
 
+/**
+     * @author David Esteban Morales Estrella
+     * @Github DavidME1604
+     * @version 2.0
+     * 
+     * @since 2023-11-21
+     * 
+     * @license
+     * 
+     * Juego de anagramas, donde se te da una palabra y se te pide un anagrama. Tiene 3 oportunidades
+     */
+
 public class Cadena8Anagramas {
+
     public void Anagramas() {
         Scanner reader = new Scanner(System.in);
         String[] conjunto = { "delira", "lidera", "ballena", "llenaba", "alondra", "ladrona", "España", "apañes",
