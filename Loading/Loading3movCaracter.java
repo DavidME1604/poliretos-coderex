@@ -1,4 +1,16 @@
 package Loading;
+/**
+     * @author Elizabeth Lopez Zelaya
+     * @Github Lorent777
+     * @version 2.0
+     * 
+     * @since 2023-12-01
+     * 
+     * @license
+     * 
+     *         
+     */
+
 
 public class Loading3movCaracter {
 

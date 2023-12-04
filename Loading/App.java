@@ -3,13 +3,20 @@ package Loading;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner reader = new Scanner(System.in);
 
         Loading2hashtag oLoading2 = new Loading2hashtag();
         System.out.println("\nBarra de carga con (#): ");
         oLoading2.hashtagload();
         System.out.println();
+
+        Loading3movCaracter oLoading3 = new Loading3movCaracter();
+        System.out.println("[Loading 3]- Ingrese un carácter:");
+        String character = reader.nextLine();
+        oLoading3.movCaracter(character);
+        System.out.println();
+
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
         System.out.println("Cargando bolitas (oo0)...");
