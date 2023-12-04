@@ -14,6 +14,20 @@ public class App {
         oArray2.incialesletras(tamaño,caracter);
         System.out.println();
 
+        Arrays1porcentaje oArrays1 = new Arrays1porcentaje();
+        System.out.print("Ingrese su nombre completo: ");
+        String nombreCompleto = reader.nextLine();
+        String[] palabras = nombreCompleto.split("\\s+");
+        int[] porcentajesCarga = new int[palabras.length];
+        for (int i = 0; i < palabras.length; i++) {
+        System.out.print("Ingrese el porcentaje de carga para \"" + palabras[i] + "\": ");
+        porcentajesCarga[i] = reader.nextInt();
+        }
+        System.out.println("\n" + nombreCompleto);
+        for (int i = 0; i < palabras.length; i++) {
+        oArrays1.mostrarPorcentajeCarga(palabras[i], porcentajesCarga[i]);
+        }
+        System.out.println();
 
         Arrays4NombreMatriz oArray4 = new Arrays4NombreMatriz();
         System.out.print("Ingrese su nombre: ");
