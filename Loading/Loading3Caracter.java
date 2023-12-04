@@ -50,22 +50,5 @@ public class Loading3Caracter {
            Thread.sleep(100);
        }
    }
-
-   public void movCaracter() throws InterruptedException {
-       System.out.println("Loading 4: ");
-       for (int porcentaje = 0; porcentaje <= 100; porcentaje++) {
-           int nSpacios = 2 - (porcentaje % 3);
-           String bStatus = "";
-           for (int espacio = 0; espacio < nSpacios; espacio++) {
-               bStatus += "o";
-           }
-           bStatus += "0";
-           for (int espacio = 0; espacio < 2 - nSpacios; espacio++) {
-               bStatus += "o";
-           }
-           System.out.print(bStatus + " " + porcentaje + "%\r");
-           Thread.sleep(200);
-       }
-   }
 }
 
