@@ -15,6 +15,15 @@ public class App {
         oRecursivo2.imprimir(a,b);
         System.out.println();
 
+        Recursividad3Producto oRecursividad3 = new Recursividad3Producto();
+        System.out.println("Producto recursivo");
+        System.out.print("Ingrese un numero: ");
+        int c=reader.nextInt();
+        System.out.print("Ingrese otro numero: ");
+        int d=reader.nextInt();
+        oRecursividad3.mostrar(c,d);
+        System.out.println();
+
         
         Recursividad4Potencia oRecursivo4 = new Recursividad4Potencia();
         System.out.println("Operacion potencia: ");
