@@ -16,6 +16,7 @@ public class App {
         String character = reader.nextLine();
         oLoading3.movCaracter(character);
         System.out.println();
+        System.out.println();
 
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
@@ -31,6 +32,12 @@ public class App {
         Loading7flecha oLoading7 = new Loading7flecha();
         System.out.println("\nBarra de carga con flecha: ");
         oLoading7.barraflecha();
+        System.out.println();
+
+        Loading8NombApellido oLoading8 = new Loading8NombApellido();
+        System.out.println("Ingresa tu nombre y apellido: ");
+        String nombreCompleto = reader.nextLine();
+        oLoading8.Loading8Nombre(nombreCompleto);
         System.out.println();
 
 
