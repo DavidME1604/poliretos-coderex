@@ -11,13 +11,17 @@ public class App {
         oLoading2.hashtagload();
         System.out.println();
 
+        Loading1carga loading1 = new Loading1carga();
+        System.out.println("\nIndicador de carga con movimiento rotacional: ");
+        loading1.cargaRotacional();
+        System.out.println();
+
         Loading3movCaracter oLoading3 = new Loading3movCaracter();
         System.out.println("[Loading 3]- Ingrese un carácter:");
         String character = reader.nextLine();
         oLoading3.movCaracter(character);
         System.out.println();
         System.out.println();
-
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
         System.out.println("Cargando bolitas (oo0)...");
@@ -27,6 +31,11 @@ public class App {
         Loading5BarraPorciento oLoading5 = new Loading5BarraPorciento();
         System.out.println("Cargando el porcentaje");
         oLoading5.BarraPorciento();
+        System.out.println();
+
+        Loading6barra loading6 = new Loading6barra();
+        System.out.println("\nIndicador de carga con barra desplazante: ");
+        loading6.barraDesplazante();
         System.out.println();
 
         Loading7flecha oLoading7 = new Loading7flecha();
@@ -39,7 +48,6 @@ public class App {
         String nombreCompleto = reader.nextLine();
         oLoading8.Loading8Nombre(nombreCompleto);
         System.out.println();
-
 
         Loading9Nombre oLoading9 = new Loading9Nombre();
         System.out.println("Cargando con nombre...");
