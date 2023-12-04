@@ -14,6 +14,15 @@ public class App {
         oSerie2.SerieMasFibonacciFor(numeroElementos);
         System.out.println();
 
+        Serie4Caracteres oSerie4 = new Serie4Caracteres();
+        System.out.println("Serie 4 utilizando bucle for:");
+        oSerie4.generarSerieFor(numeroElementos);
+        System.out.println("\nSerie 4 utilizando bucle while:");
+        oSerie4.generarSerieWhile(numeroElementos);
+        System.out.println("\nSerie 4 utilizando bucle do-while:");
+        oSerie4.generarSerieDoWhile(numeroElementos);
+        System.out.println();
+
         Serie5palitos oSerie5 = new Serie5palitos();
         System.out.print("\nSerie 5 con lineas inclinadas: ");
         oSerie5.palitosinclinados(numeroElementos);
@@ -24,6 +33,14 @@ public class App {
         System.out.print("Serie 3 usando for: ");
         oSerie3.Serie3(numeroElementos);
         System.out.println();
+
+        Serie8letras oSerie8 = new Serie8letras();
+        System.out.println("Serie 8 utilizando bucle for:");
+        oSerie8.generarSerieFor(numeroElementos);
+        System.out.println("\nSerie 8 utilizando bucle while:");
+        oSerie8.generarSerieWhile(numeroElementos);
+        System.out.println("\nSerie 8 utilizando bucle do-while:");
+        oSerie8.generarSerieDoWhile(numeroElementos);
 
 
         Serie6LetrasImpares oSerie6 = new Serie6LetrasImpares();
