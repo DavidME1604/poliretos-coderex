@@ -24,6 +24,13 @@ public class App {
         oRecursividad3.mostrar(c,d);
         System.out.println();
 
+        Recursividad1factorial oRecursivo1 = new Recursividad1factorial();
+        System.out.println("Factorial recursivo");
+        System.out.print("Ingrese un número: ");
+        int numero = reader.nextInt();
+        oRecursivo1.imprimirFactorial(numero);
+        System.out.println();
+
         
         Recursividad4Potencia oRecursivo4 = new Recursividad4Potencia();
         System.out.println("Operacion potencia: ");
@@ -40,6 +47,15 @@ public class App {
         int n = reader.nextInt();
         oRecursivo5.conteoProgresivo(n);
         System.out.println();
+
+        Recursividad6ConteoRegresivo conteoRegresivo = new Recursividad6ConteoRegresivo();
+        System.out.println("Conteo Regresivo");
+        System.out.print("Ingrese un número para iniciar el conteo: ");
+        int numero = reader.nextInt();
+        conteoRegresivo.conteoRegresivo(numero);
+        System.out.println();
+
+    
 
 
         reader.close();
