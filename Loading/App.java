@@ -6,14 +6,14 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         Scanner reader = new Scanner(System.in);
 
-        Loading2hashtag oLoading2 = new Loading2hashtag();
-        System.out.println("\nBarra de carga con (#): ");
-        oLoading2.hashtagload();
-        System.out.println();
-
         Loading1carga loading1 = new Loading1carga();
         System.out.println("\nIndicador de carga con movimiento rotacional: ");
         loading1.cargaRotacional();
+        System.out.println();
+
+        Loading2hashtag oLoading2 = new Loading2hashtag();
+        System.out.println("\nBarra de carga con (#): ");
+        oLoading2.hashtagload();
         System.out.println();
 
         Loading3movCaracter oLoading3 = new Loading3movCaracter();

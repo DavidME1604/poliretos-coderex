@@ -23,7 +23,7 @@ package Figuras;
 
 public class Figura16MasMenosX {
 
-    public static void MasMenosX(int tamanioFigura) {
+    public void MasMenosX(int tamanioFigura) {
         int espacios = 0;
 
         for (int i = 1; i <= tamanioFigura*2+1; i++) {

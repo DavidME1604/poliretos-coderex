@@ -51,8 +51,8 @@ public class App {
         Recursividad6ConteoRegresivo conteoRegresivo = new Recursividad6ConteoRegresivo();
         System.out.println("Conteo Regresivo");
         System.out.print("Ingrese un número para iniciar el conteo: ");
-        int numero = reader.nextInt();
-        conteoRegresivo.conteoRegresivo(numero);
+        int numeroIniciar = reader.nextInt();
+        conteoRegresivo.conteoRegresivo(numeroIniciar);
         System.out.println();
 
     

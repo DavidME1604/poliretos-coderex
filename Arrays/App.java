@@ -14,7 +14,7 @@ public class App {
         oArray2.incialesletras(tamaño,caracter);
         System.out.println();
 
-        Arrays1porcentaje oArrays1 = new Arrays1porcentaje();
+        Arrays1porcentaje oArray1 = new Arrays1porcentaje();
         System.out.print("Ingrese su nombre completo: ");
         String nombreCompleto = reader.nextLine();
         String[] palabras = nombreCompleto.split("\\s+");
@@ -25,7 +25,7 @@ public class App {
         }
         System.out.println("\n" + nombreCompleto);
         for (int i = 0; i < palabras.length; i++) {
-        oArrays1.mostrarPorcentajeCarga(palabras[i], porcentajesCarga[i]);
+        oArray1.mostrarPorcentajeCarga(palabras[i], porcentajesCarga[i]);
         }
         System.out.println();
 

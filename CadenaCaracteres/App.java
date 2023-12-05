@@ -7,13 +7,13 @@ public class App {
         Scanner reader = new Scanner(System.in);
 
         Cadena1Contarvocales oCadena1 = new Cadena1Contarvocales();
-        System.out.print("Ingresa una frase: ");
+        System.out.println("Ingresa una frase: ");
         String fraseingresada = reader.nextLine();
         oCadena1.contarvocal(fraseingresada);
         System.out.println();
 
         Cadena2ContarLetras oCadena2 = new Cadena2ContarLetras();
-        System.out.print("[ Cad. 2 ]- Ingresa una palabra: ");
+        System.out.print("[ Cad. 2 ]- Ingresa una frase: ");
         String palabraIngresada = reader.nextLine();
         oCadena2.contarLetras(palabraIngresada);
         System.out.println();
@@ -27,14 +27,12 @@ public class App {
         oCadena3.EliminarVocal(vocal, palabra);
         System.out.println();
                 
-        System.out.println("\nInvertir frases con vocales en mayúsculas:");
+        /*System.out.println("\nInvertir frases con vocales en mayúsculas:");
         Cadena5InvertirFrase oCadena5 = new Cadena5InvertirFrase();
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese una frase: ");
-        String frase = scanner.nextLine();
+        String frase = reader.nextLine();
         String resultado = Cadena5InvertirFrase.invertirFrase(frase);
-        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);
-        scanner.close();
+        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);*/
 
         Cadena6FraseinvertidaCaps oCadean6 = new Cadena6FraseinvertidaCaps();
         System.out.print("Ingresa una frase: ");

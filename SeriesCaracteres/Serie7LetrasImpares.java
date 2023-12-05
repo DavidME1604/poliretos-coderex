@@ -10,7 +10,7 @@ package SeriesCaracteres;
      * 
      * S6:  a  +   c   -   e   +   g   -   ... 
      */
-public class Serie6LetrasImpares {
+public class Serie7LetrasImpares {
     /**
      * Serie S6 con For
      * @param numeroElementos

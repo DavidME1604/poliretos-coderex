@@ -1,6 +1,6 @@
 package SeriesCaracteres;
 
-public class Serie7AbcAumento {
+public class Serie8AbcAumento {
     /*
      * @author José David Pallares Santamaría
      * @Github JosDavP

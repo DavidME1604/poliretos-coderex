@@ -25,7 +25,6 @@ public class App {
         System.out.print("Niveles/tamaño para la Figura4: ");
         System.out.println("\nFigura4:");
         oFigura4.generarFigura4(tamanioFigura);
-        scanner.close();
 
         Figura5Piramide oFigura5 = new Figura5Piramide();
         System.out.println("\nFigura piramide invertida con(*):");
@@ -69,7 +68,6 @@ public class App {
         System.out.print("Ingrese el número de filas para la Figura14triangulo: ");
         System.out.println("\nFigura14triangulo:");
         figura14triangulo.generarFigura14triangulo(tamanioFigura);
-        scanner.close();
 
         Figura15EscaleraPascal oFigura15 = new Figura15EscaleraPascal();
         System.out.println("\nEscalera de Pascal: ");
