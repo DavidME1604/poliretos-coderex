@@ -1,4 +1,5 @@
-**
+package Loading;
+/* 
  * Clase que implementa un indicador de carga con movimiento rotacional.
  * Utiliza los signos \|/-| para simular el progreso de carga desde 0% hasta 100%.
  *
