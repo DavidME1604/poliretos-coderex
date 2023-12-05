@@ -20,7 +20,7 @@
 
 package Arrays;
 
-public class Array2Iniciales {
+public class Arrays2Iniciales {
     /**
      * Se trabajara con la creacion de las dos letras para mas tarde unirlas
      * @param tamaño

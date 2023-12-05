@@ -7,13 +7,13 @@ public class App {
         Scanner reader = new Scanner(System.in);
 
         Cadena1Contarvocales oCadena1 = new Cadena1Contarvocales();
-        System.out.println("Ingresa una frase: ");
+        System.out.print("Ingresa una frase: ");
         String fraseingresada = reader.nextLine();
         oCadena1.contarvocal(fraseingresada);
         System.out.println();
 
         Cadena2ContarLetras oCadena2 = new Cadena2ContarLetras();
-        System.out.print("[ Cad. 2 ]- Ingresa una frase: ");
+        System.out.print("[ Cad. 2 ]- Ingresa una palabra: ");
         String palabraIngresada = reader.nextLine();
         oCadena2.contarLetras(palabraIngresada);
         System.out.println();
@@ -26,13 +26,6 @@ public class App {
         String palabra = reader.nextLine();
         oCadena3.EliminarVocal(vocal, palabra);
         System.out.println();
-                
-        /*System.out.println("\nInvertir frases con vocales en mayúsculas:");
-        Cadena5InvertirFrase oCadena5 = new Cadena5InvertirFrase();
-        System.out.print("Ingrese una frase: ");
-        String frase = reader.nextLine();
-        String resultado = Cadena5InvertirFrase.invertirFrase(frase);
-        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);*/
 
         Cadena6FraseinvertidaCaps oCadean6 = new Cadena6FraseinvertidaCaps();
         System.out.print("Ingresa una frase: ");
@@ -46,12 +39,15 @@ public class App {
         oCadena7.eliminarJota(palabraJ);
         System.out.println();
 
+
+
         Cadena4EliminarLetra oCadena4 = new Cadena4EliminarLetra();
         System.out.print("Elimina las letras repetidas de la frase: \n");
         oCadena4.EliminarLetra();
         System.out.println();
 
         System.out.println("\nJuego de los anagramas");
+
         Cadena8Anagramas oCadena8 = new Cadena8Anagramas();
         oCadena8.Anagramas();
         System.out.println();

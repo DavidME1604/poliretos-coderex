@@ -6,7 +6,7 @@ public class App {
         public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        Array2Iniciales oArray2 = new Array2Iniciales();
+        Arrays2Iniciales oArray2 = new Arrays2Iniciales();
         System.out.print("Ingresa el tamaño de la matriz: ");
         int tamaño = reader.nextInt();
         System.out.print("Ingresa el caracter que deseas usar: ");
