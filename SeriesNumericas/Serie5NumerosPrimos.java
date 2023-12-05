@@ -4,8 +4,7 @@ package SeriesNumericas;
      * Clase que representa la generación de la serie cinco.
      * 
      *  * <p>
-     * La serie 5 sigue un patrón de aumento en los números primos. Por lo tanto , 
-     * la serie se forma como sigue: 3, 8, 13, 18, 23, 28, 33, 38, ..
+     * La serie 5 sigue un patrón de aumento en los números primos.
      * </p>
      * 
      * @author Elizabeth Lopez Zelaya
