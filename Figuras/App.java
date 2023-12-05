@@ -9,7 +9,7 @@ public class App {
         System.out.print("Ingrese el numero de elementos: ");
         int tamanioFigura = reader.nextInt();
 
-        Figura1Asteristico oFigura1 = new Figura1Asteristico();
+        Figura1CuadradoAsteristico oFigura1 = new Figura1CuadradoAsteristico();
         System.out.println("\n[ Figura 1 ] - Cuadrado con asterísticos(*): ");
         oFigura1.CuadroConAsteriscos(tamanioFigura);
 
