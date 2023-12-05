@@ -16,7 +16,7 @@ package Figuras;
             * * * * *
      */
 
-public class Figura1Asteristico {
+public class Figura1CuadradoAsteristico {
     /**
      * Cuadrado con (*)
      * @param tamanioFigura
