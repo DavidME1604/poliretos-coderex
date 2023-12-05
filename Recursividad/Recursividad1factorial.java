@@ -7,7 +7,6 @@
  */
 package Recursividad;
 
-import java.util.Scanner;
 
 public class Recursividad1factorial {
 
