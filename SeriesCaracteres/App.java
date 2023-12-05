@@ -33,10 +33,16 @@ public class App {
         Serie5palitos oSerie5 = new Serie5palitos();
         System.out.print("\nSerie 5 con lineas inclinadas: ");
         oSerie5.palitosinclinados(numeroElementos);
+        System.out.println();
 
-        Serie7LetrasImpares oSerie6 = new Serie7LetrasImpares();
+        Serie6Abecedario oSerie6 = new Serie6Abecedario();
+        System.out.println("[ Serie 6 ]- Abecedario: ");
+        oSerie6.imprimirAbecedario();
+        System.out.println();
+
+        Serie7LetrasImpares obSerie6 = new Serie7LetrasImpares();
         System.out.print("\nSerie 6 letras impares con For: ");
-        oSerie6.letrasImparesFor(numeroElementos);
+        obSerie6.letrasImparesFor(numeroElementos);
         System.out.println("\n");
 
         Serie8AbcAumento oSerie7 = new Serie8AbcAumento();
