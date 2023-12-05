@@ -9,6 +9,12 @@ public class App {
         int numeroElementos = reader.nextInt();
         System.out.println();
 
+        Serie1MasMenos oSerie1 = new Serie1MasMenos();
+        System.out.println("[ Serie 1 ] Mas y menos: ");
+        oSerie1.imprimirSerieS1(numeroElementos);
+        System.out.println();
+        
+
         Serie2MasFibonacci oSerie2 = new Serie2MasFibonacci();
         System.out.print("Serie 2 fibonacci con For (+): ");
         oSerie2.SerieMasFibonacciFor(numeroElementos);
