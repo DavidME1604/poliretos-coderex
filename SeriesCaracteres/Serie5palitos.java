@@ -17,12 +17,13 @@ public class Serie5palitos {
      *@param numeroElementos
      *  
      */
-    public String a;
+    
     public void palitosinclinados(int numeroElementos){
         StringBuilder serie = new StringBuilder();
 
         for (int i = 0; i < numeroElementos; i++) {
-            serie.append("\\ | / - ");
+            serie.append("\\  |  /  -  ");
+            serie.append(" |   ");
         }
 
         System.out.println(serie);

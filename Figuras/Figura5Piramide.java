@@ -21,16 +21,15 @@ public class Figura5Piramide {
      * @param tamanioFigura
      */
     public void Piramideasterisco(int tamanioFigura){
-        int contador = tamanioFigura;        
-        for(int i=0;i<=tamanioFigura;i++){ 
-            for (int k = 0; k < i; k++) {
+        for (int i = tamanioFigura - 1; i >= 0; i--) {
+            for (int j = 0; j < tamanioFigura - i - 1; j++) {
                 System.out.print(" ");
-            } 
-            for(int j=0;j<contador;j++){
+            }
+            for (int k = 0; k < 2 * i + 1; k++) {
                 System.out.print("*");
             }
-            contador-=2;
-            System.out.println(" ");
+    
+            System.out.println();
         }
     }
 }

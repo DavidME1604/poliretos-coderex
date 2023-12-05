@@ -1,8 +1,4 @@
 /*
- * L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
-    [====/           ] 20%
- */
-/*
     * @author Johann Vladimir Pasquel Montenegro
     * @Github Vladimirjon
     * version 1.0  
@@ -37,7 +33,7 @@ public class Loading7flecha {
          indicePunta = (indicePunta + 1) % puntaFlecha.length;
 
          try {
-            Thread.sleep(200);
+            Thread.sleep(250);
          } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
          }
