@@ -27,6 +27,15 @@ public class App {
         oCadena3.EliminarVocal(vocal, palabra);
         System.out.println();
 
+        System.out.println("\nInvertir frases con vocales en mayúsculas:");
+        Cadena5InvertirFrase oCadena5 = new Cadena5InvertirFrase();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese una frase: ");
+        String frase = scanner.nextLine();
+        String resultado = Cadena5InvertirFrase.invertirFrase(frase);
+        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);
+        System.out.println();
+
         Cadena6FraseinvertidaCaps oCadean6 = new Cadena6FraseinvertidaCaps();
         System.out.print("Ingresa una frase: ");
         String fraseoriginal = reader.nextLine();
@@ -38,7 +47,6 @@ public class App {
         String palabraJ = reader.nextLine();
         oCadena7.eliminarJota(palabraJ);
         System.out.println();
-
 
 
         Cadena4EliminarLetra oCadena4 = new Cadena4EliminarLetra();
