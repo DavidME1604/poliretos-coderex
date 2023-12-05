@@ -31,13 +31,12 @@ public class Cadena2ContarLetras {
                 }
             }
     
-            // Si la letra no es una vocal, incrementar el contador
             if (!esVocal) {
                 contador++;
             }
         }
     
-        System.out.println("La frase: " + fraseIngresada + " contiene " + contador + " letras que no son vocales.");
+        System.out.println("La frase: " + fraseIngresada + " contiene " + contador + " letras.");
     }
        
 }
