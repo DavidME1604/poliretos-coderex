@@ -25,16 +25,18 @@ public class Figura11EscaleraIncrementa {
          * @param tamanioFigura El tamaño de la escalera.
          */
         
-        public void EscaleraIncrementa(int tamanioFigura) {
-            
-            for (int i = 0; i < tamanioFigura; i++) {
-                
-                for (int j = 0; j < i ; j++) {
-                    System.out.print("          ");
-                }
-                System.out.println("|" + " _".repeat(i + 1));
-            }
-        }
+    public void EscaleraIncrementa(int tamanioFigura) {
         
+            for (int i = 0; i < tamanioFigura; i++) {
+                System.out.println("|" + " _".repeat(i + 1));
+    
+
+                for (int j = 0; j <= i; j++) {
+                    System.out.print("   ".repeat(j+1));
+                }
+    
+            }
+    }        
 }
+
         
