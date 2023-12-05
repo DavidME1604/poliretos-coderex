@@ -27,7 +27,6 @@ public class App {
         oCadena3.EliminarVocal(vocal, palabra);
         System.out.println();
 
-        System.out.println("\nInvertir frases con vocales en mayúsculas:");
         Cadena5InvertirFrase oCadena5 = new Cadena5InvertirFrase();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese una frase: ");
