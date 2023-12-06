@@ -29,6 +29,11 @@ public class App {
         }
         System.out.println();
 
+        Arrays3NombrePlano oArray3 = new Arrays3NombrePlano();
+        System.out.print("[ Array 3] - Ingrese su nombre completo: ");
+        String name = reader.nextLine();
+        oArray3.imprimirNombreEscaleraHaciaLaDerecha(name);
+
         Arrays4NombreMatriz oArray4 = new Arrays4NombreMatriz();
         System.out.print("Ingrese su nombre: ");
         String nombre=reader.nextLine();
