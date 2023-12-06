@@ -9,42 +9,33 @@ package Loading;
  * @since 03-12-2023
  * @license Loading, Usar el delay para animar
  */
-public class Loading6barra {
+public class Loading6Barra {
+    
 
-    /**
-     * Método para simular la carga con una barra que se desplaza de izquierda a derecha.
-     */
-    public void barraDesplazante() {
+    public static void mostrarBarraDesplazamiento(int porcentaje) {
         int longitudBarra = 20;
-        int delayMillis = 100; 
+        int posicionFlecha = (int) Math.ceil((porcentaje / 100.0) * longitudBarra);
 
-        for (int i = 0; i <= 100; i++) {
-            System.out.print("\rLoading: " + getDesplazanteBar(i, longitudBarra));
-
-            try {
-                Thread.sleep(delayMillis);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+        //Construir la barra de desplazamiento
+        StringBuilder barra = new StringBuilder("[");
+        for (int i = 0; i < longitudBarra; i++) {
+            if (i == posicionFlecha) {
+                barra.append(" <=> ");
+            } else {
+                barra.append(" ");
             }
         }
+        barra.append("] ").append(porcentaje).append("%");
 
-        System.out.println("\nLoading complete!");
+        //Barra animada
+        System.out.print("\r" + barra.toString());
     }
 
-    
-    private static String getDesplazanteBar(int progress, int longitudBarra) {
-        int currentPosition = (int) ((double) progress / 100 * (longitudBarra - 2)); // Restar 2 para dejar espacio en los extremos
-        StringBuilder barraDesplazante = new StringBuilder("[");
-
-        for (int i = 0; i < longitudBarra - 2; i++) {
-            if (i == currentPosition) {
-                barraDesplazante.append("<=");
-            } else {
-                barraDesplazante.append(" ");
-            }
+    public static void pausar(int milisegundos) {
+        try {
+            Thread.sleep(milisegundos);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
-
-        barraDesplazante.append("] ").append(progress).append("%");
-        return barraDesplazante.toString();
     }
 }
