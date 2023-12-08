@@ -43,6 +43,10 @@ public class App {
         Figura8EscalerasDer oFigura8 = new Figura8EscalerasDer();
         System.out.println("\nEscaleras hacia la derecha: ");
         oFigura8.EscalerasDer(tamanioFigura);
+        
+        Figura9PrimamideSegmentos oFigura9 = new Figura9PrimamideSegmentos();
+        System.out.println("\nPiramide de segmentos: ");
+        oFigura9.imprimirPiramide(tamanioFigura);
 
         Figura10Escalera oFigura10 = new Figura10Escalera();
         System.out.println("\nEscalera con dos patrones: ");
