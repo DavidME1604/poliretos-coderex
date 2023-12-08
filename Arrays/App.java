@@ -1,10 +1,22 @@
 package Arrays;
-
+import java.util.Arrays;
 import java.util.Scanner;
+
 
 public class App {
         public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
+
+        Arrays1porcentaje oArray1 = new Arrays1porcentaje();
+        System.out.print("Ingrese su nombre completo: ");
+        String nombreCompleto = reader.nextLine();
+        String[] palabras = nombreCompleto.split("\\s+");
+        System.out.print("Ingrese porcentaje de carga: ");
+        String porcentajeInput = reader.nextLine();
+        String[] porcentajesCar = porcentajeInput.split(" ");
+        int[] porcentajesCarga = Arrays.stream(porcentajesCar).mapToInt(Integer::parseInt).toArray();
+        oArray1.cargaPorcentajeNombre(palabras, porcentajesCarga);
+        System.out.println();
 
         Arrays2Iniciales oArray2 = new Arrays2Iniciales();
         System.out.print("Ingresa el tamaño de la matriz: ");
@@ -12,21 +24,6 @@ public class App {
         System.out.print("Ingresa el caracter que deseas usar: ");
         char caracter = reader.next().charAt(0);
         oArray2.incialesletras(tamaño,caracter);
-        System.out.println();
-
-        Arrays1porcentaje oArray1 = new Arrays1porcentaje();
-        System.out.print("Ingrese su nombre completo: ");
-        String nombreCompleto = reader.nextLine();
-        String[] palabras = nombreCompleto.split("\\s+");
-        int[] porcentajesCarga = new int[palabras.length];
-        for (int i = 0; i < palabras.length; i++) {
-        System.out.print("Ingrese el porcentaje de carga para \"" + palabras[i] + "\": ");
-        porcentajesCarga[i] = reader.nextInt();
-        }
-        System.out.println("\n" + nombreCompleto);
-        for (int i = 0; i < palabras.length; i++) {
-        oArray1.mostrarPorcentajeCarga(palabras[i], porcentajesCarga[i]);
-        }
         System.out.println();
 
         Arrays3NombrePlano oArray3 = new Arrays3NombrePlano();
