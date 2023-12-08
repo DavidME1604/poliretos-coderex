@@ -6,6 +6,13 @@ public class App {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
+        Recursividad1factorial oRecursivo1 = new Recursividad1factorial();
+        System.out.println("Factorial recursivo");
+        System.out.print("Ingrese un número: ");
+        int numero = reader.nextInt();
+        oRecursivo1.imprimirFactorial(numero);
+        System.out.println();
+
         Recursividad2suma oRecursivo2 = new Recursividad2suma();
         System.out.println("Suma recursiva");
         System.out.print("Ingrese un numero: ");
@@ -23,14 +30,6 @@ public class App {
         int d=reader.nextInt();
         oRecursividad3.mostrar(c,d);
         System.out.println();
-
-        Recursividad1factorial oRecursivo1 = new Recursividad1factorial();
-        System.out.println("Factorial recursivo");
-        System.out.print("Ingrese un número: ");
-        int numero = reader.nextInt();
-        oRecursivo1.imprimirFactorial(numero);
-        System.out.println();
-
         
         Recursividad4Potencia oRecursivo4 = new Recursividad4Potencia();
         System.out.println("Operacion potencia: ");
