@@ -33,9 +33,9 @@ public class App {
         oLoading5.BarraPorciento();
         System.out.println();
 
-        Loading6barra loading6 = new Loading6barra();
+        Loading6Barra loading6 = new Loading6Barra();
         System.out.println("\nIndicador de carga con barra desplazante: ");
-        loading6.barraDesplazante();
+        loading6.iniciarBarraDeslizante();
         System.out.println();
 
         Loading7flecha oLoading7 = new Loading7flecha();
