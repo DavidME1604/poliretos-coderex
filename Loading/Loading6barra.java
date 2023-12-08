@@ -10,13 +10,30 @@ package Loading;
  * @license Loading, Usar el delay para animar
  */
 public class Loading6Barra {
-    
+    public void iniciarBarraDeslizante() {
+        int retardo = 2000;
+        int pasos = 20;
 
-    public static void mostrarBarraDesplazamiento(int porcentaje) {
+        
+        for (int i = 0; i <= pasos; i++) {
+            int porcentaje = i * 100 / pasos;
+            mostrarBarraDesplazamiento(porcentaje);
+            pausar(retardo / pasos);
+        }
+
+        
+        for (int i = pasos; i >= 0; i--) {
+            int porcentaje = i * 100 / pasos;
+            mostrarBarraDesplazamiento(porcentaje);
+            pausar(retardo / pasos);
+        }
+    }
+
+    private static void mostrarBarraDesplazamiento(int porcentaje) {
         int longitudBarra = 20;
         int posicionFlecha = (int) Math.ceil((porcentaje / 100.0) * longitudBarra);
 
-        //Construir la barra de desplazamiento
+        
         StringBuilder barra = new StringBuilder("[");
         for (int i = 0; i < longitudBarra; i++) {
             if (i == posicionFlecha) {
@@ -27,11 +44,11 @@ public class Loading6Barra {
         }
         barra.append("] ").append(porcentaje).append("%");
 
-        //Barra animada
+        
         System.out.print("\r" + barra.toString());
     }
 
-    public static void pausar(int milisegundos) {
+    private static void pausar(int milisegundos) {
         try {
             Thread.sleep(milisegundos);
         } catch (InterruptedException e) {
