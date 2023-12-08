@@ -15,8 +15,8 @@ public class Loading1carga {
      */
     public void cargaRotacional() {
         int totalSteps = 20; 
-        int delayMillis = 50; 
-        int loadDelayMillis = 200; 
+        int delayMillis = 200; 
+        int loadDelayMillis = 10; 
 
         for (int i = 0; i <= totalSteps; i++) {
             System.out.print("\rLoading: " + getLoadingBar(i, totalSteps));
