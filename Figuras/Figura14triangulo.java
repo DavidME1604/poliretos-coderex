@@ -19,14 +19,14 @@ public class Figura14triangulo {
      * 
      * @param numRows El número de filas de la Figura14triangulo.
      */
-    public void generarFigura14triangulo(int numRows) {
-        for (int i = 0; i < numRows; i++) {
-            // Imprimir espacios en blanco antes de los números
-            for (int j = 0; j < numRows - i - 1; j++) {
+    public void generarFigura14triangulo(int tamanioFigura) {
+        for (int i = 0; i < tamanioFigura; i++) {
+            
+            for (int j = 0; j < tamanioFigura - i - 1; j++) {
                 System.out.print("  ");
             }
 
-            // Imprimir los números
+            
             int coeficiente = 1;
             for (int k = 0; k <= i; k++) {
                 System.out.printf("%4d", coeficiente);
@@ -41,16 +41,16 @@ public class Figura14triangulo {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el número de filas para la Figura14triangulo: ");
         
-        // Leer el número de filas de la Figura14triangulo
+        
         int numRows = scanner.nextInt();
 
-        // Crear una instancia de la clase Figura14triangulo
+        
         Figura14triangulo figura14triangulo = new Figura14triangulo();
 
-        // Generar la Figura14triangulo con el número de filas especificado
+        
         figura14triangulo.generarFigura14triangulo(numRows);
 
-        // Cerrar el scanner
+        
         scanner.close();
     }
 }
