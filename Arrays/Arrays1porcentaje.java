@@ -1,5 +1,4 @@
 package Arrays;
-import java.util.Scanner;
 /**
  * Clase que permite ingresar un nombre completo, solicitar porcentajes de carga
  * para cada palabra 
@@ -7,38 +6,22 @@ import java.util.Scanner;
  * @version 2.43
  * @since 2023-12-03
  */
-public class Arrays1CargaPorcentajePalabra {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class Arrays1porcentaje {
+    public void cargaPorcentajeNombre(String[] nombre, int[] porcentajes) {
 
-        
-        System.out.println("Ingrese su nombre: ");
-        String nombre = scanner.nextLine();
-
-       
-        String[] palabras = nombre.split(" ");
-
-        
-        System.out.println("Ingrese el porcentaje de carga : ");
-        String[] porcentajesStr = scanner.nextLine().split(" ");
-        int[] porcentajes = new int[palabras.length];
-
-        
-        for (int i = 0; i < porcentajesStr.length; i++) {
-            porcentajes[i] = Integer.parseInt(porcentajesStr[i]);
+        for (int i = 0; i < nombre.length; i++) {
+            mostrarBarra(nombre[i], porcentajes[i]);
         }
 
-        for (int i = 0; i < palabras.length; i++) {
-            mostrarBarra(palabras[i], porcentajes[i]);
-        }
-
-        scanner.close();
     }
 
-    private static void mostrarBarra(String palabra, int porcentaje) {
+    private void mostrarBarra(String palabra, int porcentaje) {
         int largoBarra = porcentaje / 5;
         int espacios = 20 - largoBarra;
+        int porcentajeResta = 100 - porcentaje;
+        palabra = palabra.substring(0, palabra.length() - (porcentajeResta * palabra.length()) / 100);
 
         System.out.println("[" + "=".repeat(largoBarra) + ">" + " ".repeat(espacios) + "]" + porcentaje + "% " + palabra);
     }
 }
+
