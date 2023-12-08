@@ -43,9 +43,9 @@ public class App {
 
         Arrays5MatrizAleatoria oArrray5 = new Arrays5MatrizAleatoria();
         System.out.print("Ingrese su nombre Completo: ");
-        String nombreCompleto=reader.nextLine();
+        String nombreCompleto1=reader.nextLine();
         System.out.println("Matrices Aleatorias");
-        oArrray5.MatrizAleatoria(nombreCompleto);
+        oArrray5.MatrizAleatoria(nombreCompleto1);
         System.out.println();
         
 
