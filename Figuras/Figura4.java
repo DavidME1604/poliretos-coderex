@@ -20,9 +20,9 @@ public class Figura4 {
      * 
      * @param niveles El número de niveles/tamaño de la figura.
      */
-    public void generarFigura4(int niveles) {
-        for (int i = 0; i < niveles; i++) {
-            for (int j = 0; j < niveles - i - 1; j++) {
+    public void generarFigura4(int tamanioFigura) {
+        for (int i = 0; i < tamanioFigura; i++) {
+            for (int j = 0; j < tamanioFigura - i - 1; j++) {
                 System.out.print("  ");
             }
 
