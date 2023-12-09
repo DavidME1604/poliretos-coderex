@@ -19,7 +19,7 @@ public class App {
         System.out.println();
 
         Loading3movCaracter oLoading3 = new Loading3movCaracter();
-        System.out.println("[Loading 3]- Ingrese un carácter:");
+        System.out.print("[Loading 3]- Ingrese un carácter:");
         char simbolo = reader.next().charAt(0);
         oLoading3.movCaracter(simbolo);
         System.out.println("\n");
