@@ -3,13 +3,14 @@ package Figuras;
  * @author Jonathan Paredes
  * @version 2.43
  * @since 2023-12-03
- * Crear una escalera completa
- *  F9:                                                                     
-                            ___
-                        ___|   |___
-                    ___|	   	   |___
-                ___|		   		   |___
-            ___|			   			   |___
+ * Genera un triangulo que sigue la logica del Triangulo de pascal, pero en este caso esta formado por simbolos *, +.
+ *  F19:                                                                    
+            *
+            +   *
+            +   3   *
+            +   4   5   *
+            +   5   9   7  *
+            +   6   14  16  9  *
 */
 public class Figura19EscaleraInvertidaNumerosSimbolos {
 
