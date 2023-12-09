@@ -6,9 +6,9 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         Scanner reader = new Scanner(System.in);
 
-        Loading1carga loading1 = new Loading1carga();
+        Loading1carga oloading1 = new Loading1carga();
         System.out.println("\nIndicador de carga con movimiento rotacional: ");
-        loading1.cargaRotacional();
+        oloading1.cargaRotacional();
         System.out.println();
 
         Loading2hashtag oLoading2 = new Loading2hashtag();
