@@ -44,10 +44,10 @@ public class AppLoading {
         oLoading7.barraflecha();
         System.out.println();
 
-        Loading8NombApellido oLoading8 = new Loading8NombApellido();
+        Loading8NombreApellido oLoading8 = new Loading8NombreApellido();
         System.out.println("Ingresa tu nombre y apellido: ");
         String nombreCompleto = reader.nextLine();
-        oLoading8.Loading8Nombre(nombreCompleto);
+        oLoading8.loading8Nombre(nombreCompleto);
         System.out.println();
 
         Loading9Nombre oLoading9 = new Loading9Nombre();
