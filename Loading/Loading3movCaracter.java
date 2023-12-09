@@ -12,7 +12,7 @@ package Loading;
      */
 public class Loading3movCaracter {
 
- public void movCaracter(String character) throws InterruptedException {
+ public void movCaracter(char simbolo) throws InterruptedException {
    System.out.print("[");
    for (int espacio = 0; espacio < 20; espacio++) {
        System.out.print(" ");
@@ -23,7 +23,7 @@ public class Loading3movCaracter {
        System.out.print("[");
        for (int indice = 0; indice < 20; indice++) {
            if (indice == progreso) {
-             System.out.print(character);
+             System.out.print(simbolo);
            } else {
              System.out.print(" ");
            }
@@ -34,7 +34,7 @@ public class Loading3movCaracter {
 
    System.out.print("[");
    for (int indice = 0; indice < 20; indice++) {
-       System.out.print(character);
+       System.out.print(simbolo);
    }
    System.out.print("] 100%\r");
  }
