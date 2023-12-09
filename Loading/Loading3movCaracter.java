@@ -13,7 +13,6 @@ package Loading;
     public void movCaracter(char simbolo) {
         int longitudBarra = 20;
 
-        // Mover hacia la derecha
         for (int i = 0; i <= longitudBarra; i++) {
             String barra = "[" + desplazarSimbolo(simbolo, i, longitudBarra) + "] " + (i * 2.5) + "%";
             System.out.print("\r" + barra);
@@ -25,7 +24,6 @@ package Loading;
             }
         }
 
-        // Mover hacia la izquierda
         for (int i = longitudBarra; i >= 0; i--) {
             String barraIzq = "[" + desplazarSimbolo(simbolo, i, longitudBarra) + "] " + (i * 2.5) + "%"; 
             System.out.print("\r" + barraIzq);
