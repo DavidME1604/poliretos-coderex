@@ -7,7 +7,13 @@ package Figuras;
  * <p>
  * La Figura14triangulo consiste en imprimir los coeficientes del triángulo de Pascal.
  * </p>
- * 
+ * F14:                                                                    4
+                        1
+                      1    1
+                    1    2    1
+                  1    3    3    1
+               1    4    6    4    1
+             1   5   10    10    5   1
  * @author Jonathan Paredes
  * @version 2.43
  * @since 2023-12-03
