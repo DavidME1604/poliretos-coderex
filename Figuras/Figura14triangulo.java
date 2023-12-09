@@ -1,5 +1,5 @@
 package Figuras;
-import java.util.Scanner;
+
 
 /**
  * Clase que genera la Figura14triangulo.
@@ -37,20 +37,4 @@ public class Figura14triangulo {
         }
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de filas para la Figura14triangulo: ");
-        
-        
-        int numRows = scanner.nextInt();
-
-        
-        Figura14triangulo figura14triangulo = new Figura14triangulo();
-
-        
-        figura14triangulo.generarFigura14triangulo(numRows);
-
-        
-        scanner.close();
-    }
 }
