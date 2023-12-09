@@ -13,33 +13,16 @@ public class Loading1carga {
     /**
      * Método para simular la carga con un indicador visual rotacional.
      */
-    public void cargaRotacional() {
-        int totalSteps = 20; 
-        int delayMillis = 250; 
-        
 
-        for (int i = 0; i <= totalSteps; i++) {
-            System.out.print("\rLoading: " + getLoadingBar(i, totalSteps));
-
-            try {
-                Thread.sleep(delayMillis);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+    public void cargaRotacional(){
+        String[] figuras = { "\\", "|", "/","-"};
+        for (int i = 0; i <= 100; i ++) {
+                System.out.print("\r" + figuras[i%4]+" "+ i+"%");
+                try {
+                    Thread.sleep(250);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
-        }
-
-    }
-    private static String getLoadingBar(int currentStep, int totalSteps) {
-        int progress = (int) ((double) currentStep / totalSteps * 100);
-        char[] symbols = {'\\', '|', '/', '-'};
-
-        StringBuilder loadingBar = new StringBuilder("[");
-        int numOfSymbols = (currentStep * 25) / totalSteps; 
-        for (int i = 0; i < 25; i++) {
-            int index = (currentStep + i) % symbols.length;
-            loadingBar.append(i < numOfSymbols ? symbols[index] : ' ');
-        }
-        loadingBar.append("] ").append(progress).append("%");
-        return loadingBar.toString().trim(); 
     }
 }

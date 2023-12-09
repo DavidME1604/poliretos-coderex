@@ -46,6 +46,7 @@ public class AppLoading {
 
         Loading8NombApellido oLoading8 = new Loading8NombApellido();
         System.out.println("Ingresa tu nombre y apellido: ");
+        reader.nextLine();
         String nombreCompleto = reader.nextLine();
         oLoading8.Loading8Nombre(nombreCompleto);
         System.out.println();
