@@ -1,5 +1,4 @@
 package CadenaCaracteres;
-import java.util.Scanner;
 
 /**
  * Clase que invierte una frase y coloca las vocales en mayúsculas.
@@ -46,20 +45,4 @@ public class Cadena5InvertirFrase {
                 || caracterEnMinuscula == 'o' || caracterEnMinuscula == 'u';
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        
-        System.out.print("Ingrese una frase: ");
-        String frase = scanner.nextLine();
-
-        
-        String resultado = invertirFrase(frase);
-
-        
-        System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);
-
-        
-        scanner.close();
-    }
 }
