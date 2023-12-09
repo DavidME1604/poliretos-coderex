@@ -1,11 +1,16 @@
 package Figuras;
 /**
- * Clase que permite ingresar un nombre completo, solicitar porcentajes de carga
- * para cada palabra 
  * @author Jonathan Paredes
  * @version 2.43
  * @since 2023-12-03
- */
+ * Crear una escalera completa
+ *  F9:                                                                     
+                            ___
+                        ___|   |___
+                    ___|	   	   |___
+                ___|		   		   |___
+            ___|			   			   |___
+*/
 public class Figura9PrimamideSegmentos {
     
 
