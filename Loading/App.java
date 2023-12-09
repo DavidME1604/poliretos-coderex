@@ -22,7 +22,7 @@ public class App {
         System.out.println("[Loading 3]- Ingrese un carácter:");
         char simbolo = reader.next().charAt(0);
         oLoading3.movCaracter(simbolo);
-        System.out.println();
+        System.out.println("\n");
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
         System.out.println("Cargando bolitas (oo0)...");
