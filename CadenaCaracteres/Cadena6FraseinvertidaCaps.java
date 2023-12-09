@@ -18,15 +18,15 @@ public class Cadena6FraseinvertidaCaps {
      * @param fraseoriginal
      */
     public void InversoYmayuscula(String fraseoriginal){
-        char[] vocales = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        char[] letras = {'b','c','d','f','g','h','j','k','l','m','n','ñ','p','q','r','s','t','v','w','x','y','z'};
 
         
         StringBuilder fraseCaps = new StringBuilder();
 
         for (int i = 0; i < fraseoriginal.length(); i++) {
             char letractual = fraseoriginal.charAt(i);
-            for (char vocal : vocales) {
-                if (letractual == vocal) {
+            for (char letra : letras) {
+                if (letractual == letra) {
                     letractual = Character.toUpperCase(letractual);
                 }
             }
