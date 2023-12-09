@@ -1,38 +1,10 @@
 package SeriesNumericas;
 import java.util.Scanner;
 
-public class App {
+public class AppSeriesNumericas {
+    
     public static void main(String[] args) throws Exception {
         try (Scanner reader = new Scanner(System.in)) {
-            System.out.println();
-            System.out.println("                ***********");
-            System.out.println("              ******** # **");
-            System.out.println("              **************");
-            System.out.println("                      ######");
-            System.out.println("                ############");
-            System.out.println("                      *******");
-            System.out.println("                      ********                   *");
-            System.out.println("                 **************                  **");
-            System.out.println("                ***¯¯¯***********              ****");
-            System.out.println("                      ****************************");
-            System.out.println("                      ***************************");
-            System.out.println("                       ****** /###   ###  ******");
-            System.out.println("                        ***** #      #  # ****");
-            System.out.println("                          *** #      #  # ***");
-            System.out.println("                           **  ###   ###/ **");
-            System.out.println("                            ***************");
-            System.out.println("                             ****      ****");
-            System.out.println("                             ****      ****");
-            System.out.println("                           *****     *****");
-            System.out.println("");
-            System.out.println("                          ###   ####  #    #");
-            System.out.println("                          #  #  #      #  #");
-            System.out.println("                          ###/  ###     ##");
-            System.out.println("                          #  #  #      #  #");
-            System.out.println("                          #  #  ####  #    #");
-            System.out.println();
-            System.out.println(
-                    "        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
             System.out.print("Ingrese el numero de elementos: ");
             int numeroElementos = reader.nextInt();
 

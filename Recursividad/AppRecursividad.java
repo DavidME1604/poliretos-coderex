@@ -2,7 +2,7 @@ package Recursividad;
 
 import java.util.Scanner;
 
-public class App {
+public class AppRecursividad {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 

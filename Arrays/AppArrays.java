@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class App {
+public class AppArrays {
         public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
