@@ -5,7 +5,8 @@ public class AppSeriesNumericas {
     public void presentar7() throws Exception{
         Scanner reader = new Scanner(System.in);
 
-        int numeroElementos = reader.nextInt();
+        System.out.println("Ingrese el numero de elementos: ");
+        int numeroElementos = reader.nextInt();;
 
         Serie1Fibonacci oSerie1 = new Serie1Fibonacci();
         System.out.print("\nImprimiendo serie Fibonacci con bucle for: ");
