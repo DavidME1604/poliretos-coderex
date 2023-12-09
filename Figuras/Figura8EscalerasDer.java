@@ -17,9 +17,9 @@ public class Figura8EscalerasDer {
 */
     public void EscalerasDer(int tamanioFigura) {
         int niveles = tamanioFigura;
-        for (int i = 1; i <= niveles; i++) {
+        for (int i = 1; i <= niveles+1; i++) {
             // Ajusta el número de espacios para alinear las escaleras
-            for (int j = 1; j <= 4 * (niveles - i); j++) {
+            for (int j = 1; j <= 4 * (niveles+1 - i); j++) {
                 System.out.print(" ");
             }
             System.out.print(" ___|");
