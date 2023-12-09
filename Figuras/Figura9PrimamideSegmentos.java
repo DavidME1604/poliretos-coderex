@@ -15,9 +15,9 @@ public class Figura9PrimamideSegmentos {
     
 
     public void imprimirPiramide(int tamanioFigura) {
-        for (int i = 1; i <= tamanioFigura; i++) {
+        for (int i = 1; i <= tamanioFigura+1; i++) {
             
-            for (int j = 1; j <= (tamanioFigura - i) * 3; j++) {
+            for (int j = 1; j <= (tamanioFigura+1 - i) * 3; j++) {
                 System.out.print(" ");
             }
 

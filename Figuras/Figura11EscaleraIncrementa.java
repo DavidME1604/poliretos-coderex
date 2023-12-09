@@ -27,12 +27,10 @@ public class Figura11EscaleraIncrementa {
         
     public void EscaleraIncrementa(int tamanioFigura) {
         
-            for (int i = 0; i < tamanioFigura; i++) {
-                System.out.println("|" + " _".repeat(i + 1));
-    
-
+            for (int i = 1; i <= tamanioFigura; i++) {
+                System.out.println("|" + " _".repeat(i));
                 for (int j = 0; j <= i; j++) {
-                    System.out.print("   ".repeat(j+1));
+                    System.out.print((j==0)?"   ".repeat(j):"  ".repeat(j));
                 }
     
             }

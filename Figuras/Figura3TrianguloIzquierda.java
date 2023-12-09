@@ -21,7 +21,7 @@ public class Figura3TrianguloIzquierda {
         int niveles=tamanioFigura;
         for (int i = 0; i <=niveles ; i++) {
             for (int k=1; k<=i; k++){
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
