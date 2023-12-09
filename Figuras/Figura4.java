@@ -1,5 +1,4 @@
 package Figuras;
-import java.util.Scanner;
 
 /**
  * Clase que genera la Figura4.
@@ -32,14 +31,5 @@ public class Figura4 {
 
             System.out.println();
         }
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de niveles/tamaño para la Figura4: ");
-        int niveles = scanner.nextInt();
-        Figura4 figura4 = new Figura4();
-        figura4.generarFigura4(niveles);
-        scanner.close();
     }
 }
