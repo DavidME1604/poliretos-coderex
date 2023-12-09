@@ -2,7 +2,7 @@ package Loading;
 
 import java.util.Scanner;
 
-public class App {
+public class AppLoading {
     public static void main(String[] args) throws InterruptedException {
         Scanner reader = new Scanner(System.in);
 
@@ -61,7 +61,5 @@ public class App {
         System.out.println("Figura moviendose");
         oLoading10.Figura();
         System.out.println();
-
-        reader.close();
     }
 }

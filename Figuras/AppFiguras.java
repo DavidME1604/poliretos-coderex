@@ -2,7 +2,7 @@ package Figuras;
 
 import java.util.Scanner;
 
-public class App {
+public class AppFiguras {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
@@ -97,8 +97,6 @@ public class App {
         System.out.println("\nEscalera con numeros y simbolos: ");
         oFigura19.imprimirSecuencia(tamanioFigura);
         System.out.println();
-
-        reader.close();
 
     }
 }

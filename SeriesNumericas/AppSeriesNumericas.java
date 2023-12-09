@@ -1,38 +1,10 @@
 package SeriesNumericas;
+
 import java.util.Scanner;
 
-public class App {
+public class AppSeriesNumericas {
     public static void main(String[] args) throws Exception {
-        try (Scanner reader = new Scanner(System.in)) {
-            System.out.println();
-            System.out.println("                ***********");
-            System.out.println("              ******** # **");
-            System.out.println("              **************");
-            System.out.println("                      ######");
-            System.out.println("                ############");
-            System.out.println("                      *******");
-            System.out.println("                      ********                   *");
-            System.out.println("                 **************                  **");
-            System.out.println("                ***¯¯¯***********              ****");
-            System.out.println("                      ****************************");
-            System.out.println("                      ***************************");
-            System.out.println("                       ****** /###   ###  ******");
-            System.out.println("                        ***** #      #  # ****");
-            System.out.println("                          *** #      #  # ***");
-            System.out.println("                           **  ###   ###/ **");
-            System.out.println("                            ***************");
-            System.out.println("                             ****      ****");
-            System.out.println("                             ****      ****");
-            System.out.println("                           *****     *****");
-            System.out.println("");
-            System.out.println("                          ###   ####  #    #");
-            System.out.println("                          #  #  #      #  #");
-            System.out.println("                          ###/  ###     ##");
-            System.out.println("                          #  #  #      #  #");
-            System.out.println("                          #  #  ####  #    #");
-            System.out.println();
-            System.out.println(
-                    "        * Lopez.Elizabeth   * Morales.David  * Pallares.Jose\n               * Paredes.Leon   * Pasquel.Johann\n");
+        Scanner reader = new Scanner(System.in);
             System.out.print("Ingrese el numero de elementos: ");
             int numeroElementos = reader.nextInt();
 
@@ -134,6 +106,7 @@ public class App {
             System.out.print("\nSerie 2 - 6... while: ");
             oSerie12.MultiplosDosWhile(numeroElementos);
             System.out.println();
+
+            reader.nextLine();
         }
-    }
 }

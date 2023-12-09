@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 
-public class App {
+public class AppArrays {
         public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
@@ -48,10 +48,6 @@ public class App {
         System.out.println("Matrices Aleatorias");
         oArrray5.MatrizAleatoria(nombreCompleto1);
         System.out.println();
-        
-
-
-        reader.close();
         }
 
 }

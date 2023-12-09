@@ -2,7 +2,7 @@ package CadenaCaracteres;
 
 import java.util.Scanner;
 
-public class App {
+public class AppCadenaCaracteres {
         public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
@@ -60,7 +60,5 @@ public class App {
         oCadena9.LetrasAlternantes();
         System.out.println();
         
-        reader.close();
-
         }
 }
