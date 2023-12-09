@@ -15,8 +15,8 @@ public class Loading1carga {
      */
     public void cargaRotacional() {
         int totalSteps = 20; 
-        int delayMillis = 200; 
-        int loadDelayMillis = 10; 
+        int delayMillis = 250; 
+        
 
         for (int i = 0; i <= totalSteps; i++) {
             System.out.print("\rLoading: " + getLoadingBar(i, totalSteps));
@@ -28,16 +28,7 @@ public class Loading1carga {
             }
         }
 
-        
-        try {
-            Thread.sleep(loadDelayMillis * totalSteps);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-
-        System.out.println("\nLoading complete!");
     }
-
     private static String getLoadingBar(int currentStep, int totalSteps) {
         int progress = (int) ((double) currentStep / totalSteps * 100);
         char[] symbols = {'\\', '|', '/', '-'};
