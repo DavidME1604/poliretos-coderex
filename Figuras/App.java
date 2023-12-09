@@ -92,6 +92,11 @@ public class App {
         System.out.println("\nTriangulo Numero Pascal: ");
         oFigura18.TrianguloNumPascal(tamanioFigura);
         System.out.println();
+        
+        Figura19EscaleraInvertidaNumerosSimbolos oFigura19 = new Figura19EscaleraInvertidaNumerosSimbolos();
+        System.out.println("\nEscalera con numeros y simbolos: ");
+        oFigura19.imprimirSecuencia(tamanioFigura);
+        System.out.println();
 
 
         
