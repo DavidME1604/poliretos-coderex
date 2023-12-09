@@ -9,7 +9,6 @@ public class Figura19EscaleraInvertidaNumerosSimbolos {
     public void imprimirSecuencia(int numNiveles) {
         int matrizNumerosSimbolos[][] = new int[numNiveles + 1][numNiveles + 1];
         StringBuilder trianguloSumadoPascalYSimbolos = new StringBuilder();
-        int valor = 0;
         for (int filas = 0; filas < numNiveles; filas++) {
             for (int columnas = 0; columnas < numNiveles; columnas++) {
                 if (columnas <= filas) {
