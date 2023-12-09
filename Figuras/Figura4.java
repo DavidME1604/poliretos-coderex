@@ -11,6 +11,14 @@ package Figuras;
  * @author Jonathan Paredes
  * @version 2.43
  * @since 2023-12-03
+ 
+     * Crear la siguiente figura:
+     
+    F4:             *                                                       
+                  * *
+                * * *
+              * * * *
+            * * * * *
  */
 public class Figura4 {
 
