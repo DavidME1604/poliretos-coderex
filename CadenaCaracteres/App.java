@@ -28,9 +28,8 @@ public class App {
         System.out.println();
 
         Cadena5InvertirFrase oCadena5 = new Cadena5InvertirFrase();
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese una frase: ");
-        String frase = scanner.nextLine();
+        String frase = reader.nextLine();
         String resultado = Cadena5InvertirFrase.invertirFrase(frase);
         System.out.println("Frase invertida con vocales en mayúsculas: " + resultado);
         System.out.println();
