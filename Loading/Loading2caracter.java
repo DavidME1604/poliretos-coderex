@@ -14,11 +14,10 @@
 
 package Loading;
 
-public class Loading2hashtag {
-   public void hashtagload() {
+public class Loading2caracter {
+   public void hashtagload(char caracter) {
       int longitudBarra = 20;
-        char caracter = '#';
-
+        
         String[] figuras = {
                 "[" + new String(new char[longitudBarra]).replace('\0', ' ') + "] 0%",
                 "[" + new String(new char[1]).replace('\0', caracter) + new String(new char[longitudBarra - 1]).replace('\0', ' ') + "] 0%"

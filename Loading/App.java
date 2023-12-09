@@ -11,9 +11,11 @@ public class App {
         oloading1.cargaRotacional();
         System.out.println();
 
-        Loading2hashtag oLoading2 = new Loading2hashtag();
-        System.out.println("\nBarra de carga con (#): ");
-        oLoading2.hashtagload();
+        Loading2caracter oLoading2 = new Loading2caracter();
+        System.out.println("\nBarra de carga con caracter: ");
+        System.out.print("Ingresa un caracter: ");
+        char caracter = reader.next().charAt(0);
+        oLoading2.hashtagload(caracter);
         System.out.println();
 
         Loading3movCaracter oLoading3 = new Loading3movCaracter();
