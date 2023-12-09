@@ -3,7 +3,14 @@ package Figuras;
  * @author Jonathan Paredes
  * @version 2.43
  * @since 2023-12-03
- */
+ * Crear una escalera completa
+ *  F9:                                                                     
+                            ___
+                        ___|   |___
+                    ___|	   	   |___
+                ___|		   		   |___
+            ___|			   			   |___
+*/
 public class Figura19EscaleraInvertidaNumerosSimbolos {
 
     public void imprimirSecuencia(int numNiveles) {
