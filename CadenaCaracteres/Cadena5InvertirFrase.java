@@ -15,7 +15,7 @@ public class Cadena5InvertirFrase {
      * @param frase La frase a invertir.
      * @return La frase invertida con vocales en mayúsculas.
      */
-    public static String invertirFrase(String frase) {
+    public String invertirFrase(String frase) {
         StringBuilder resultado = new StringBuilder();
 
         
@@ -39,7 +39,7 @@ public class Cadena5InvertirFrase {
      * @param c El caracter a verificar.
      * @return true si es una vocal, false de lo contrario.
      */
-    private static boolean esVocal(char c) {
+    private boolean esVocal(char c) {
         char caracterEnMinuscula = Character.toLowerCase(c);
         return caracterEnMinuscula == 'a' || caracterEnMinuscula == 'e' || caracterEnMinuscula == 'i'
                 || caracterEnMinuscula == 'o' || caracterEnMinuscula == 'u';

@@ -1,5 +1,4 @@
 package CadenaCaracteres;
-import java.util.Scanner;
 /**
      * @author Elizabeth Lopez Zelaya
      * @Github Lorent777

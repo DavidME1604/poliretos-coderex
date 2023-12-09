@@ -12,7 +12,7 @@ package Figuras;
             +   5   9   7  *
             +   6   14  16  9  *
 */
-public class Figura19EscaleraInvertidaNumerosSimbolos {
+public class Figura19EscaleraInvertidaNumeros {
 
     public void imprimirSecuencia(int numNiveles) {
         int matrizNumerosSimbolos[][] = new int[numNiveles + 1][numNiveles + 1];

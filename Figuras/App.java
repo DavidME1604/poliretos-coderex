@@ -93,13 +93,11 @@ public class App {
         oFigura18.TrianguloNumPascal(tamanioFigura);
         System.out.println();
         
-        Figura19EscaleraInvertidaNumerosSimbolos oFigura19 = new Figura19EscaleraInvertidaNumerosSimbolos();
+        Figura19EscaleraInvertidaNumeros oFigura19 = new Figura19EscaleraInvertidaNumeros();
         System.out.println("\nEscalera con numeros y simbolos: ");
         oFigura19.imprimirSecuencia(tamanioFigura);
         System.out.println();
 
-
-        
         reader.close();
 
     }
