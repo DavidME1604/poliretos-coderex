@@ -1,13 +1,21 @@
 package Loading;
 
-import java.util.Scanner;
+/**
+ * @author Elizabeth Lopez Zelaya
+ * @Github Lorent777
+ * @version 2.0
+ * @since 2023-12-01
+ * @license
+ * 
+ */
 
-public class Loading3MovCaracter {
-    public void movimientoCaracter(String cr) {
+public class Loading3movCaracter {
+
+    public void movCaracter(String cr) {
         System.out.println();
         int espaciosAdelante = 20, espaciosAtras = 0;
-        for (int i = 0; i <= 90;i+=10) {
-            
+        for (int i = 0; i <= 90; i += 10) {
+
             while (espaciosAtras <= 20) {
                 System.out.print(
                         "\r " + "[" + " ".repeat(espaciosAtras) + cr + " ".repeat(espaciosAdelante) + "]" + i + "%");

@@ -18,11 +18,11 @@ public class AppLoading {
         oLoading2.hashtagload(caracter);
         System.out.println();
 
-        Loading3MovCaracter oLoading3 = new Loading3MovCaracter();
+        Loading3movCaracter oLoading3 = new Loading3movCaracter();
         System.out.print("[Loading 3]- Ingrese un carácter:");
         reader.nextLine();
         String simbolo = reader.nextLine();
-        oLoading3.movimientoCaracter(simbolo);
+        oLoading3.movCaracter(simbolo);
         System.out.println("\n");
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
