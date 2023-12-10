@@ -20,7 +20,7 @@ package Figuras;
 public class Figura11EscaleraIncrementa {
 
         /**
-         * Imprime una escalera con bloques que incrementan en cada nivel(máxmo 5).
+         * Imprime una escalera con bloques que incrementan en cada nivel.
          * 
          * @param tamanioFigura El tamaño de la escalera.
          */

@@ -79,7 +79,7 @@ public class AppFiguras {
 
         Figura16MasMenosX oFigura16 = new Figura16MasMenosX();
         System.out.println("\n[ Figura 16 ] - Mas y menos X: ");
-        oFigura16.MasMenosX(tamanioFigura);
+        oFigura16.imprimirMasMenosX(tamanioFigura);
         System.out.println();
 
         Figura17NumerosX oFigura17 = new Figura17NumerosX();
