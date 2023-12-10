@@ -47,14 +47,14 @@ public class AppLoading {
 
         Loading8NombreApellido oLoading8 = new Loading8NombreApellido();
         System.out.println("Ingresa tu nombre y apellido: ");
-        String nombreCompleto = reader.nextLine();
-        oLoading8.loading8Nombre(nombreCompleto);
-        System.out.println();
+        String nombreCompleto = reader.next();
+        oLoading8.loading8NombreApellido(nombreCompleto);
+        System.out.println("\n");
 
         Loading9Nombre oLoading9 = new Loading9Nombre();
         System.out.println("Cargando con nombre...");
         System.out.print("Ingresa tu nombre y apellido sin espacios: ");
-        String nombre = reader.nextLine();
+        String nombre = reader.next();
         oLoading9.Nombre(nombre);
         System.out.println("\n");
 

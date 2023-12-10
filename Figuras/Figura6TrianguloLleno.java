@@ -20,7 +20,7 @@ package Figuras;
 
 public class Figura6TrianguloLleno {
  /**
-         * Imprime una pirámide invertida con asteriscos (*)
+         * Imprime una pirámide  con asteriscos (*)
          * @param tamanioFigura
          */
     public void TrianguloLleno(int tamanioFigura) {
