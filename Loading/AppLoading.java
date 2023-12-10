@@ -18,10 +18,11 @@ public class AppLoading {
         oLoading2.hashtagload(caracter);
         System.out.println();
 
-        Loading3movCaracter oLoading3 = new Loading3movCaracter();
+        Loading3MovCaracter oLoading3 = new Loading3MovCaracter();
         System.out.print("[Loading 3]- Ingrese un carácter:");
-        char simbolo = reader.next().charAt(0);
-        oLoading3.movCaracter(simbolo);
+        reader.nextLine();
+        String simbolo = reader.nextLine();
+        oLoading3.movimientoCaracter(simbolo);
         System.out.println("\n");
 
         Loading4Bolitas oLoading4 = new Loading4Bolitas();
@@ -36,7 +37,7 @@ public class AppLoading {
 
         Loading6Barra loading6 = new Loading6Barra();
         System.out.println("\nIndicador de carga con barra desplazante: ");
-        loading6.iniciarBarraDeslizante();
+        loading6.movimientoBarra();
         System.out.println();
 
         Loading7flecha oLoading7 = new Loading7flecha();

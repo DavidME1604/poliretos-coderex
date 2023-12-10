@@ -10,47 +10,33 @@ package Loading;
  * @license Loading, Usar el delay para animar
  */
 public class Loading6Barra {
-    public void iniciarBarraDeslizante() {
-        int retardo = 2000;
-        int pasos = 20;
-
-        for (int i = 0; i <= pasos; i++) {
-            mostrarBarraDesplazamiento(i, pasos, i == pasos);
-            pausar(retardo / pasos);
-        }
-
-        for (int i = pasos; i >= 0; i--) {
-            mostrarBarraDesplazamiento(i, pasos, i == 0);
-            pausar(retardo / pasos);
-        }
-    }
-
-    private static void mostrarBarraDesplazamiento(int progreso, int total, boolean mostrarPorcentaje) {
-        int longitudBarra = 20;
-        int posicionFlecha = (int) Math.ceil((progreso / (double) total) * longitudBarra);
-
-        StringBuilder barra = new StringBuilder("[");
-        for (int i = 0; i < longitudBarra; i++) {
-            if (i == posicionFlecha) {
-                barra.append(" <=> ");
-            } else {
-                barra.append(" ");
+    public void movimientoBarra() {
+        int espaciosAdelante = 20, espaciosAtras = 0;
+        for (int i = 0; i <= 90;i+=10) {
+            
+            while (espaciosAtras <= 20) {
+                System.out.print(
+                        "\r " + "[" + " ".repeat(espaciosAtras) + "<=>" + " ".repeat(espaciosAdelante) + "]" + i + "%");
+                espaciosAtras++;
+                espaciosAdelante--;
+                try {
+                    Thread.sleep(25);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+            while (espaciosAtras > 0) {
+                espaciosAtras--;
+                espaciosAdelante++;
+                System.out.print(
+                        "\r " + "[" + " ".repeat(espaciosAtras) + "<=>" + " ".repeat(espaciosAdelante) + "]" + i + "%");
+                try {
+                    Thread.sleep(25);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
-        barra.append("] ");
-
-        if (mostrarPorcentaje) {
-            barra.append("100%");
-        }
-
-        System.out.print("\r" + barra.toString());
-    }
-
-    private static void pausar(int milisegundos) {
-        try {
-            Thread.sleep(milisegundos);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
+        System.out.print("\r " + "[" + " ".repeat(espaciosAtras) + "<=>" + " ".repeat(espaciosAdelante) + "]" + 100 + "%");
     }
 }

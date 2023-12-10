@@ -10,51 +10,45 @@ public class Loading10Figura {
      * 
      * @license
      * 
-     *  Desplazar la figura a la derecha y regresar            
-     *    \|||/
-     *    (> <)
-     * ooO-(_)-Ooo
+     *          Desplazar la figura a la derecha y regresar
+     *          \|||/
+     *          (> <)
+     *          ooO-(_)-Ooo
      */
     public void Figura() {
-        int distancia = 20; 
+        int espaciosAdelante = 20, espaciosAtras = 0;
+        for (int i = 0; i <= 90; i += 10) {
 
-        for (int i = 0; i <= distancia * 2; i++) {
-
-            boolean haciaDerecha = i < distancia;
-
-            int espacios = haciaDerecha ? distancia - i : i - distancia;
-
-            for (int j = 0; j < espacios; j++) {
-                System.out.print(" ");
+            while (espaciosAtras <= 20) {
+                System.out.print("\033[H\033[2J"); // Limpia la consola
+                System.out.flush();
+                System.out.println(" ".repeat(espaciosAtras) + "   \\|||/" + " ".repeat(espaciosAdelante));
+                System.out.println(" ".repeat(espaciosAtras) + "   (> <)" + " ".repeat(espaciosAdelante));
+                System.out.println(" ".repeat(espaciosAtras) + "ooO-(_)-Ooo" + " ".repeat(espaciosAdelante));
+                System.out.println("Cargando..." + i + "%");
+                espaciosAtras++;
+                espaciosAdelante--;
+                try {
+                    Thread.sleep(35);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
-
-            System.out.print("    \\|||/");
-            System.out.println();
-
-            for (int k = 0; k < espacios; k++) {
-                System.out.print(" ");
+            while (espaciosAtras > 0) {
+                espaciosAtras--;
+                espaciosAdelante++;
+                System.out.print("\033[H\033[2J"); // Limpia la consola
+                System.out.flush();
+                System.out.println(" ".repeat(espaciosAtras) + "   \\|||/" + " ".repeat(espaciosAdelante));
+                System.out.println(" ".repeat(espaciosAtras) + "   (> <)" + " ".repeat(espaciosAdelante));
+                System.out.println(" ".repeat(espaciosAtras) + "ooO-(_)-Ooo" + " ".repeat(espaciosAdelante));
+                System.out.println("Cargando..." + i + "%");
+                try {
+                    Thread.sleep(35);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
-
-            System.out.print("    (> <)");
-            System.out.println();
-
-            for (int l = 0; l < espacios; l++) {
-                System.out.print(" ");
-            }
-
-            System.out.println(" ooO-(_)-Ooo");
-
-            int porcentaje = (int) (((double) i / (distancia * 2)) * 100);
-            System.out.println("Porcentaje: " + porcentaje + "%");
-
-            try {
-
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
         }
     }
 }

@@ -1,50 +1,36 @@
 package Loading;
-/**
-     * @author Elizabeth Lopez Zelaya
-     * @Github Lorent777
-     * @version 2.0 
-     * @since 2023-12-01
-     * @license
-     *         
-     */
 
-    public class Loading3movCaracter{
+import java.util.Scanner;
 
-    public void movCaracter(char simbolo) {
-        int longitudBarra = 20;
-
-        for (int i = 0; i <= longitudBarra; i++) {
-            String barra = "[" + desplazarSimbolo(simbolo, i, longitudBarra) + "] " + (i * 2.5) + "%";
-            System.out.print("\r" + barra);
-
-            try {
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+public class Loading3MovCaracter {
+    public void movimientoCaracter(String cr) {
+        System.out.println();
+        int espaciosAdelante = 20, espaciosAtras = 0;
+        for (int i = 0; i <= 90;i+=10) {
+            
+            while (espaciosAtras <= 20) {
+                System.out.print(
+                        "\r " + "[" + " ".repeat(espaciosAtras) + cr + " ".repeat(espaciosAdelante) + "]" + i + "%");
+                espaciosAtras++;
+                espaciosAdelante--;
+                try {
+                    Thread.sleep(25);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+            while (espaciosAtras > 0) {
+                espaciosAtras--;
+                espaciosAdelante++;
+                System.out.print(
+                        "\r " + "[" + " ".repeat(espaciosAtras) + cr + " ".repeat(espaciosAdelante) + "]" + i + "%");
+                try {
+                    Thread.sleep(25);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
-
-        for (int i = longitudBarra; i >= 0; i--) {
-            String barraIzq = "[" + desplazarSimbolo(simbolo, i, longitudBarra) + "] " + (i * 2.5) + "%"; 
-            System.out.print("\r" + barraIzq);
-
-            try {
-                Thread.sleep(200);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    private static String desplazarSimbolo(char simbolo, int posicion, int longitudBarra) {
-        StringBuilder barraBuilder = new StringBuilder();
-        for (int i = 0; i < longitudBarra; i++) {
-            if (i == posicion) {
-                barraBuilder.append(simbolo);
-            } else {
-                barraBuilder.append(" ");
-            }
-        }
-        return barraBuilder.toString();
+        System.out.print("\r " + "[" + " ".repeat(espaciosAtras) + cr + " ".repeat(espaciosAdelante) + "]" + 100 + "%");
     }
 }
