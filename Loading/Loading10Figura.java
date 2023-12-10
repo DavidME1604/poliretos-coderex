@@ -49,6 +49,12 @@ public class Loading10Figura {
                     Thread.currentThread().interrupt();
                 }
             }
+            System.out.print("\033[H\033[2J"); // Limpia la consola
+            System.out.flush();
+            System.out.println(" ".repeat(espaciosAtras) + "   \\|||/" + " ".repeat(espaciosAdelante));
+            System.out.println(" ".repeat(espaciosAtras) + "   (> <)" + " ".repeat(espaciosAdelante));
+            System.out.println(" ".repeat(espaciosAtras) + "ooO-(_)-Ooo" + " ".repeat(espaciosAdelante));
+            System.out.println("Cargando..." + "100%");
         }
     }
 }
