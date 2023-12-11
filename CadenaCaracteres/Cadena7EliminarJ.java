@@ -13,10 +13,10 @@ package CadenaCaracteres;
 
 public class Cadena7EliminarJ {
 
-    public void  eliminarJota(String palabraJ) {
+    public void eliminarJota(String palabraJ) {
 
-        String resultado = palabraJ.toUpperCase().replace("J", "");
-        System.out.println("La palabra sin la letra 'J' es: " + resultado);
+        System.out.println("La palabra sin la letra 'J' es: " + palabraJ.toUpperCase().replace("J", ""));
 
     }
 }
+
