@@ -20,10 +20,9 @@ public class Cadena2ContarLetras {
         char[] vocales = {'a', 'e', 'i', 'o', 'u'};
     
         for (int i = 0; i < fraseIngresada.length(); i++) {
-            char letraActual = fraseIngresada.charAt(i);
+            char letraActual = fraseIngresada.toLowerCase().charAt(i);
             boolean esVocal = false;
     
-            // Verificar si la letra actual es una vocal
             for (char vocal : vocales) {
                 if (letraActual == vocal) {
                     esVocal = true;
